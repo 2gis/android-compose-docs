@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>MapComposableState</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dgis.css" rel="Stylesheet">
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    compose-map
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0.0        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":compose-map:dokkaHtmlDgis/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":compose-map:dokkaHtmlDgis/release"
+                                       data-filter=":compose-map:dokkaHtmlDgis/release"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    compose-map
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="compose-map::ru.dgis.sdk.compose.map/MapComposableState///PointingToDeclaration//1849886158">
+  <div class="breadcrumbs"><a href="../../../index.html">compose-map</a><span class="delimiter">/</span><a href="../index.html">ru.dgis.sdk.compose.map</a><span class="delimiter">/</span><span class="current">MapComposableState</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Map</span><wbr></wbr><span>Composable</span><wbr></wbr><span><span>State</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MapComposableState</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mapOptions<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/MapOptions///PointingToDeclaration/">MapOptions</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">State that allows control over various map-related parameters and behaviors, such as theme, copyright configuration, FPS settings, touch events, screenshot functionality, and gestures.</p><h2 class="">Notes:</h2><ul><li><p class="paragraph"><strong>Main Thread Requirement:</strong> All interactions with this class, including setting properties or invoking methods, must be performed on the main thread to ensure thread safety and proper UI behavior.</p></li><li><p class="paragraph"><code class="lang-kotlin">MapOptions.mapTheme</code> is <strong>not used</strong>. Use the <code class="lang-kotlin">setTheme</code> method instead to update the theme.</p></li><li><p class="paragraph">Some functionalities, such as taking snapshots or gesture management, are only available when the map is ready (<code class="lang-kotlin">map</code> is not <code class="lang-kotlin">null</code>).</p></li></ul></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="856021065%2FConstructors%2F1849886158" anchor-label="MapComposableState" id="856021065%2FConstructors%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-map-composable-state.html"><span>Map</span><wbr></wbr><span>Composable</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="856021065%2FConstructors%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mapOptions<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/MapOptions///PointingToDeclaration/">MapOptions</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-116407608%2FProperties%2F1849886158" anchor-label="copyrightGravity" id="-116407608%2FProperties%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="copyright-gravity.html"><span>copyright</span><wbr></wbr><span><span>Gravity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-116407608%2FProperties%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="copyright-gravity.html">copyrightGravity</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="59154545%2FProperties%2F1849886158" anchor-label="copyrightMargins" id="59154545%2FProperties%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="copyright-margins.html"><span>copyright</span><wbr></wbr><span><span>Margins</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="59154545%2FProperties%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="copyright-margins.html">copyrightMargins</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="../-copyright-margins/index.html">CopyrightMargins</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="43324855%2FProperties%2F1849886158" anchor-label="fpsCounterCallback" id="43324855%2FProperties%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fps-counter-callback.html"><span>fps</span><wbr></wbr><span>Counter</span><wbr></wbr><span><span>Callback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="43324855%2FProperties%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="fps-counter-callback.html">fpsCounterCallback</a><span class="token operator">: </span><span class="token punctuation">(</span><span data-unresolved-link="ru.dgis.sdk.map/Fps///PointingToDeclaration/">Fps</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1508097297%2FProperties%2F1849886158" anchor-label="map" id="-1508097297%2FProperties%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="map.html"><span><span>map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1508097297%2FProperties%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="map.html">map</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span data-unresolved-link="ru.dgis.sdk.map/Map///PointingToDeclaration/">Map</span><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-617598294%2FProperties%2F1849886158" anchor-label="maxFps" id="-617598294%2FProperties%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-fps.html"><span>max</span><wbr></wbr><span><span>Fps</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-617598294%2FProperties%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="max-fps.html">maxFps</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span data-unresolved-link="ru.dgis.sdk.map/Fps///PointingToDeclaration/">Fps</span><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1983535074%2FProperties%2F1849886158" anchor-label="objectLongTouchCallback" id="1983535074%2FProperties%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="object-long-touch-callback.html"><span>object</span><wbr></wbr><span>Long</span><wbr></wbr><span>Touch</span><wbr></wbr><span><span>Callback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1983535074%2FProperties%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="object-long-touch-callback.html">objectLongTouchCallback</a><span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/MapObjectTappedCallback///PointingToDeclaration/">MapObjectTappedCallback</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1870386783%2FProperties%2F1849886158" anchor-label="objectTappedCallback" id="1870386783%2FProperties%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="object-tapped-callback.html"><span>object</span><wbr></wbr><span>Tapped</span><wbr></wbr><span><span>Callback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1870386783%2FProperties%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="object-tapped-callback.html">objectTappedCallback</a><span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/MapObjectTappedCallback///PointingToDeclaration/">MapObjectTappedCallback</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-311301465%2FProperties%2F1849886158" anchor-label="powerSavingMaxFps" id="-311301465%2FProperties%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="power-saving-max-fps.html"><span>power</span><wbr></wbr><span>Saving</span><wbr></wbr><span>Max</span><wbr></wbr><span><span>Fps</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-311301465%2FProperties%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="power-saving-max-fps.html">powerSavingMaxFps</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span data-unresolved-link="ru.dgis.sdk.map/Fps///PointingToDeclaration/">Fps</span><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-944591036%2FProperties%2F1849886158" anchor-label="showApiVersionInCopyright" id="-944591036%2FProperties%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-api-version-in-copyright.html"><span>show</span><wbr></wbr><span>Api</span><wbr></wbr><span>Version</span><wbr></wbr><span>In</span><wbr></wbr><span><span>Copyright</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-944591036%2FProperties%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="show-api-version-in-copyright.html">showApiVersionInCopyright</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1767912542%2FProperties%2F1849886158" anchor-label="theme" id="-1767912542%2FProperties%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme.html"><span><span>theme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1767912542%2FProperties%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="theme.html">theme</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><span data-unresolved-link="ru.dgis.sdk.map/MapTheme///PointingToDeclaration/">MapTheme</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-320111523%2FProperties%2F1849886158" anchor-label="touchEventsObserver" id="-320111523%2FProperties%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="touch-events-observer.html"><span>touch</span><wbr></wbr><span>Events</span><wbr></wbr><span><span>Observer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-320111523%2FProperties%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="touch-events-observer.html">touchEventsObserver</a><span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/TouchEventsObserver///PointingToDeclaration/">TouchEventsObserver</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="532333643%2FFunctions%2F1849886158" anchor-label="gestureManager" id="532333643%2FFunctions%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gesture-manager.html"><span>gesture</span><wbr></wbr><span><span>Manager</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="532333643%2FFunctions%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="gesture-manager.html"><span class="token function">gestureManager</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/GestureManager///PointingToDeclaration/">GestureManager</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1374221568%2FFunctions%2F1849886158" anchor-label="setCopyrightGravity" id="-1374221568%2FFunctions%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-copyright-gravity.html"><span>set</span><wbr></wbr><span>Copyright</span><wbr></wbr><span><span>Gravity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1374221568%2FFunctions%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-copyright-gravity.html"><span class="token function">setCopyrightGravity</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1938802709%2FFunctions%2F1849886158" anchor-label="setCopyrightMargins" id="1938802709%2FFunctions%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-copyright-margins.html"><span>set</span><wbr></wbr><span>Copyright</span><wbr></wbr><span><span>Margins</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1938802709%2FFunctions%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-copyright-margins.html"><span class="token function">setCopyrightMargins</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="../-copyright-margins/index.html">CopyrightMargins</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1763616084%2FFunctions%2F1849886158" anchor-label="setCopyrightUriOpener" id="-1763616084%2FFunctions%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-copyright-uri-opener.html"><span>set</span><wbr></wbr><span>Copyright</span><wbr></wbr><span>Uri</span><wbr></wbr><span><span>Opener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1763616084%2FFunctions%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-copyright-uri-opener.html"><span class="token function">setCopyrightUriOpener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">opener<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Updates the URI opener for copyright clicks.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2065527538%2FFunctions%2F1849886158" anchor-label="setMaxFps" id="2065527538%2FFunctions%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-max-fps.html"><span>set</span><wbr></wbr><span>Max</span><wbr></wbr><span><span>Fps</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2065527538%2FFunctions%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-max-fps.html"><span class="token function">setMaxFps</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/Fps///PointingToDeclaration/">Fps</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1262253307%2FFunctions%2F1849886158" anchor-label="setPowerSavingMaxFps" id="1262253307%2FFunctions%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-power-saving-max-fps.html"><span>set</span><wbr></wbr><span>Power</span><wbr></wbr><span>Saving</span><wbr></wbr><span>Max</span><wbr></wbr><span><span>Fps</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1262253307%2FFunctions%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-power-saving-max-fps.html"><span class="token function">setPowerSavingMaxFps</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/Fps///PointingToDeclaration/">Fps</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1685369135%2FFunctions%2F1849886158" anchor-label="setShowApiVersionInCopyright" id="1685369135%2FFunctions%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-show-api-version-in-copyright.html"><span>set</span><wbr></wbr><span>Show</span><wbr></wbr><span>Api</span><wbr></wbr><span>Version</span><wbr></wbr><span>In</span><wbr></wbr><span><span>Copyright</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1685369135%2FFunctions%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-show-api-version-in-copyright.html"><span class="token function">setShowApiVersionInCopyright</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Hides or displays the SDK version next to the copyright text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1270615361%2FFunctions%2F1849886158" anchor-label="setTheme" id="-1270615361%2FFunctions%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-theme.html"><span>set</span><wbr></wbr><span><span>Theme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1270615361%2FFunctions%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-theme.html"><span class="token function">setTheme</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/MapTheme///PointingToDeclaration/">MapTheme</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="630851575%2FFunctions%2F1849886158" anchor-label="takeSnapshot" id="630851575%2FFunctions%2F1849886158" data-filterable-set=":compose-map:dokkaHtmlDgis/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map:dokkaHtmlDgis/release" data-filterable-set=":compose-map:dokkaHtmlDgis/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="take-snapshot.html"><span>take</span><wbr></wbr><span><span>Snapshot</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="630851575%2FFunctions%2F1849886158"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map:dokkaHtmlDgis/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="take-snapshot.html"><span class="token function">takeSnapshot</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">alignment<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/Alignment///PointingToDeclaration/">Alignment</span><span class="token operator"> = </span>Alignment.BOTTOM_RIGHT</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk/Future///PointingToDeclaration/">Future</span><span class="token operator">&lt;</span><span data-unresolved-link="ru.dgis.sdk.map/ImageData///PointingToDeclaration/">ImageData</span><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Takes a snapshot of the map at the specified alignment.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>&#169 2024 2GIS</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
