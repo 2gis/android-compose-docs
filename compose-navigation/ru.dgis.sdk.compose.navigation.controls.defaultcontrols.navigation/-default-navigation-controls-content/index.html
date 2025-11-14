@@ -1,0 +1,274 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DefaultNavigationControlsContent</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/dgis.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../index.html">
+                    mobile-sdk
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":compose-navigation/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":compose-navigation/release" data-filter=":compose-navigation/release">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    mobile-sdk
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="2Gis Full SDK for Compose::ru.dgis.sdk.compose.navigation.controls.defaultcontrols.navigation/DefaultNavigationControlsContent///PointingToDeclaration//-747027718">
+  <div class="breadcrumbs"><a href="../../index.html">2Gis Full SDK for Compose</a><span class="delimiter">/</span><a href="../index.html">ru.dgis.sdk.compose.navigation.controls.defaultcontrols.navigation</a><span class="delimiter">/</span><span class="current">DefaultNavigationControlsContent</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Default</span><wbr><span>Navigation</span><wbr><span>Controls</span><wbr><span><span>Content</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">DefaultNavigationControlsContent</a> : <a href="../-navigation-controls-content/index.html">NavigationControlsContent</a></div><p class="paragraph">Default implementation of <a href="../-navigation-controls-content/index.html">NavigationControlsContent</a> using default colors and icons for all navigation components.</p><p class="paragraph">To customize specific components while keeping others default, you can use Kotlin delegation:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">object MyNavigationControlsContent : NavigationControlsContent by DefaultNavigationControlsContent {<br>    @Composable<br>    override fun TrafficLine(<br>        viewModel: TrafficLineViewModel,<br>        height: Dp,<br>        objectsPosition: TrafficLineObjectsPosition,<br>    ) {<br>        TrafficLineComposable(<br>            viewModel = viewModel,<br>            height = height,<br>            objectsPosition = objectsPosition,<br>            colors = TrafficLineComposableDefaults.colors().copy(<br>                redSpeedColor = Color.Red,<br>                greenTrafficLineColor = Color.Green<br>            ),<br>            icons = TrafficLineComposableDefaults.icons<br>        )<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="75784773%2FFunctions%2F-747027718" anchor-label="BetterRoutePrompt" id="75784773%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-better-route-prompt.html"><span>Better</span><wbr><span>Route</span><wbr><span><span>Prompt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="75784773%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-better-route-prompt.html"><span class="token function">BetterRoutePrompt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../../ru.dgis.sdk.compose.navigation.controls.betterrouteprompt/-better-route-prompt-view-model/index.html">BetterRoutePromptViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders the better route prompt suggesting alternative routes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1636406839%2FFunctions%2F-747027718" anchor-label="Dashboard" id="1636406839%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dashboard.html"><span><span>Dashboard</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1636406839%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-dashboard.html"><span class="token function">Dashboard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../../ru.dgis.sdk.compose.navigation.controls.dashboard/-navigation-dashboard-view-model/index.html">NavigationDashboardViewModel</a><span class="token punctuation">, </span></span><span class="parameter ">bottomSheetState<span class="token operator">: </span><a href="../../../compose-map/ru.dgis.sdk.compose.map.controls/-custom-bottom-sheet-state/index.html">CustomBottomSheetState</a><span class="token punctuation">, </span></span><span class="parameter ">onBottomSheetVisibilityChanged<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../../compose-map/ru.dgis.sdk.compose.map.controls/-custom-bottom-sheet-visibility/index.html">CustomBottomSheetVisibility</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span></span><span class="parameter ">addRoadEventButton<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.navigation/CustomizableDashboardButton///PointingToDeclaration/">CustomizableDashboardButton</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders the navigation dashboard component showing route information, audio controls, and navigation actions.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="406816728%2FFunctions%2F-747027718" anchor-label="FinishRoute" id="406816728%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-finish-route.html"><span>Finish</span><wbr><span><span>Route</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="406816728%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-finish-route.html"><span class="token function">FinishRoute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../../ru.dgis.sdk.compose.navigation.controls.finishroute/-finish-route-view-model/index.html">FinishRouteViewModel</a><span class="token punctuation">, </span></span><span class="parameter ">bottomSheetState<span class="token operator">: </span><a href="../../../compose-map/ru.dgis.sdk.compose.map.controls/-custom-bottom-sheet-state/index.html">CustomBottomSheetState</a><span class="token punctuation">, </span></span><span class="parameter ">onBottomSheetVisibilityChanged<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../../compose-map/ru.dgis.sdk.compose.map.controls/-custom-bottom-sheet-visibility/index.html">CustomBottomSheetVisibility</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders the finish route component shown when navigation is completed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-812330887%2FFunctions%2F-747027718" anchor-label="Indoor" id="-812330887%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-indoor.html"><span><span>Indoor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-812330887%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-indoor.html"><span class="token function">Indoor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">map<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/Map///PointingToDeclaration/">Map</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders the indoor navigation component showing floor and building information.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1469950345%2FFunctions%2F-747027718" anchor-label="Maneuver" id="1469950345%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-maneuver.html"><span><span>Maneuver</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1469950345%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-maneuver.html"><span class="token function">Maneuver</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../../ru.dgis.sdk.compose.navigation.controls.maneuver/-maneuver-view-model/index.html">ManeuverViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders the maneuver visualization component showing the next turn or action.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-77034035%2FFunctions%2F-747027718" anchor-label="MapControls" id="-77034035%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-map-controls.html"><span>Map</span><wbr><span><span>Controls</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-77034035%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-map-controls.html"><span class="token function">MapControls</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../../ru.dgis.sdk.compose.navigation.controls.defaultcontrols.map/-map-controls-view-model/index.html">MapControlsViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders map controls (zoom, compass, my location button).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="838300815%2FFunctions%2F-747027718" anchor-label="Message" id="838300815%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-message.html"><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="838300815%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-message.html"><span class="token function">Message</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../../ru.dgis.sdk.compose.navigation.controls.message/-message-view-model/index.html">MessageViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders the navigation message component.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-146080150%2FFunctions%2F-747027718" anchor-label="RouteOverview" id="-146080150%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-overview.html"><span>Route</span><wbr><span><span>Overview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-146080150%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-route-overview.html"><span class="token function">RouteOverview</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../../ru.dgis.sdk.compose.navigation.controls.routeoverview/-route-overview-view-model/index.html">RouteOverviewViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders the route overview component allowing users to see the full route.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1712662595%2FFunctions%2F-747027718" anchor-label="SpeedInfo" id="-1712662595%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-speed-info.html"><span>Speed</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1712662595%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-speed-info.html"><span class="token function">SpeedInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../../ru.dgis.sdk.compose.navigation.controls.speedinfo/-speed-info-view-model/index.html">SpeedInfoViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders the speed info component showing current speed, speed limit, and camera warnings.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2022878931%2FFunctions%2F-747027718" anchor-label="TrafficLine" id="2022878931%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-traffic-line.html"><span>Traffic</span><wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2022878931%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="-traffic-line.html"><span class="token function">TrafficLine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../../ru.dgis.sdk.compose.navigation.controls.trafficline/-traffic-line-view-model/index.html">TrafficLineViewModel</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/unit/Dp.html">Dp</a><span class="token punctuation">, </span></span><span class="parameter ">objectsPosition<span class="token operator">: </span><a href="../../ru.dgis.sdk.compose.navigation.controls.trafficline/-traffic-line-objects-position/index.html">TrafficLineObjectsPosition</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders the traffic line component showing traffic conditions and route objects along the route.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 2Gis</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>MapControlsViewModel</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/dgis.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../index.html">
+                    mobile-sdk
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":compose-navigation/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":compose-navigation/release" data-filter=":compose-navigation/release">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    mobile-sdk
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="2Gis Full SDK for Compose::ru.dgis.sdk.compose.navigation.controls.defaultcontrols.map/MapControlsViewModel///PointingToDeclaration//-747027718">
+  <div class="breadcrumbs"><a href="../../index.html">2Gis Full SDK for Compose</a><span class="delimiter">/</span><a href="../index.html">ru.dgis.sdk.compose.navigation.controls.defaultcontrols.map</a><span class="delimiter">/</span><span class="current">MapControlsViewModel</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Map</span><wbr><span>Controls</span><wbr><span>View</span><wbr><span><span>Model</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">MapControlsViewModel</a></div><p class="paragraph">Manages the visibility and state of map controls (zoom, compass, my location, etc.). Handles visibility logic based on available space and route type.</p><h2 class="">Thread Safety</h2><p class="paragraph">This ViewModel is <strong>not thread-safe</strong> and must only be accessed from the <strong>Main thread</strong>.</p><ul><li><p class="paragraph">All methods must be called from the Main (UI) thread</p></li><li><p class="paragraph">All <span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span> properties emit values on the Main thread</p></li><li><p class="paragraph">Concurrent access from multiple threads may lead to undefined behavior</p></li></ul><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-default-map-controls-view-model/index.html">DefaultMapControlsViewModel</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1234602319%2FProperties%2F-747027718" anchor-label="addRoadEventButtonVisibility" id="-1234602319%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-road-event-button-visibility.html"><span>add</span><wbr><span>Road</span><wbr><span>Event</span><wbr><span>Button</span><wbr><span><span>Visibility</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1234602319%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="add-road-event-button-visibility.html">addRoadEventButtonVisibility</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Observable state indicating whether the add road event button should be visible. Only shown in free roam mode when there's sufficient space.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1887739640%2FProperties%2F-747027718" anchor-label="compassVisibility" id="-1887739640%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="compass-visibility.html"><span>compass</span><wbr><span><span>Visibility</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1887739640%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="compass-visibility.html">compassVisibility</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Observable state indicating whether the compass control should be visible. Visibility depends on available vertical space.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1310293055%2FProperties%2F-747027718" anchor-label="followHideable" id="-1310293055%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="follow-hideable.html"><span>follow</span><wbr><span><span>Hideable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1310293055%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="follow-hideable.html">followHideable</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Observable state indicating whether the follow button can be hidden. True for non-pedestrian routes, false for pedestrian routes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1085830389%2FProperties%2F-747027718" anchor-label="followVisibility" id="-1085830389%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="follow-visibility.html"><span>follow</span><wbr><span><span>Visibility</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1085830389%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="follow-visibility.html">followVisibility</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Observable state indicating whether the my location (follow) button should be visible. This control has the highest priority and is shown when any space is available.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="221567664%2FProperties%2F-747027718" anchor-label="map" id="221567664%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="map.html"><span><span>map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="221567664%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="map.html">map</a><span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/Map///PointingToDeclaration/">Map</span></div><div class="brief "><p class="paragraph">The map instance used for map controls.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1675762179%2FProperties%2F-747027718" anchor-label="mapControlsUnusedHeight" id="-1675762179%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="map-controls-unused-height.html"><span>map</span><wbr><span>Controls</span><wbr><span>Unused</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1675762179%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="map-controls-unused-height.html">mapControlsUnusedHeight</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Observable state of the remaining vertical space after all visible controls are placed. Null if controls haven't been measured yet, otherwise the unused height in pixels.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1983565852%2FProperties%2F-747027718" anchor-label="trafficAndParkingVisibility" id="1983565852%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="traffic-and-parking-visibility.html"><span>traffic</span><wbr><span>And</span><wbr><span>Parking</span><wbr><span><span>Visibility</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1983565852%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="traffic-and-parking-visibility.html">trafficAndParkingVisibility</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Observable state indicating whether the traffic and parking button should be visible. Visibility depends on available space and whether the route is pedestrian.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-99627031%2FProperties%2F-747027718" anchor-label="zoomVisibility" id="-99627031%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="zoom-visibility.html"><span>zoom</span><wbr><span><span>Visibility</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-99627031%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="zoom-visibility.html">zoomVisibility</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Observable state indicating whether the zoom controls should be visible. Visibility depends on available vertical space.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1489409311%2FFunctions%2F-747027718" anchor-label="onCleared" id="1489409311%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-cleared.html"><span>on</span><wbr><span><span>Cleared</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1489409311%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="on-cleared.html"><span class="token function">onCleared</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Releases resources when the view model is no longer needed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1344401878%2FFunctions%2F-747027718" anchor-label="setAddRoadEventButtonHeight" id="1344401878%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-add-road-event-button-height.html"><span>set</span><wbr><span>Add</span><wbr><span>Road</span><wbr><span>Event</span><wbr><span>Button</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1344401878%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-add-road-event-button-height.html"><span class="token function">setAddRoadEventButtonHeight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the measured height of the add road event button.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1368594549%2FFunctions%2F-747027718" anchor-label="setCompassHeight" id="1368594549%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-compass-height.html"><span>set</span><wbr><span>Compass</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1368594549%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-compass-height.html"><span class="token function">setCompassHeight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the measured height of the compass control.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="482210992%2FFunctions%2F-747027718" anchor-label="setFollowHeight" id="482210992%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-follow-height.html"><span>set</span><wbr><span>Follow</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="482210992%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-follow-height.html"><span class="token function">setFollowHeight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the measured height of the my location (follow) button.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="996379632%2FFunctions%2F-747027718" anchor-label="setIsFreeRoam" id="996379632%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-is-free-roam.html"><span>set</span><wbr><span>Is</span><wbr><span>Free</span><wbr><span><span>Roam</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="996379632%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-is-free-roam.html"><span class="token function">setIsFreeRoam</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Updates the free roam state which affects the visibility of certain controls.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1588170056%2FFunctions%2F-747027718" anchor-label="setMapControlsAreaHeight" id="1588170056%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-map-controls-area-height.html"><span>set</span><wbr><span>Map</span><wbr><span>Controls</span><wbr><span>Area</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1588170056%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-map-controls-area-height.html"><span class="token function">setMapControlsAreaHeight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the total available height for map controls area.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="506024841%2FFunctions%2F-747027718" anchor-label="setTrafficAndParkingHeight" id="506024841%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-traffic-and-parking-height.html"><span>set</span><wbr><span>Traffic</span><wbr><span>And</span><wbr><span>Parking</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="506024841%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-traffic-and-parking-height.html"><span class="token function">setTrafficAndParkingHeight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the measured height of the traffic and parking control.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-770545138%2FFunctions%2F-747027718" anchor-label="setZoomHeight" id="-770545138%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-zoom-height.html"><span>set</span><wbr><span>Zoom</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-770545138%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="set-zoom-height.html"><span class="token function">setZoomHeight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the measured height of the zoom controls.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 2Gis</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

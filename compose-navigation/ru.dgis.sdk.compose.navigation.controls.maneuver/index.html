@@ -1,0 +1,277 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ru.dgis.sdk.compose.navigation.controls.maneuver</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../styles/dgis.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../index.html">
+                    mobile-sdk
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":compose-navigation/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":compose-navigation/release" data-filter=":compose-navigation/release">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    mobile-sdk
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="2Gis Full SDK for Compose::ru.dgis.sdk.compose.navigation.controls.maneuver////PointingToDeclaration//-747027718">
+  <div class="breadcrumbs"><a href="../index.html">2Gis Full SDK for Compose</a><span class="delimiter">/</span><span class="current">ru.dgis.sdk.compose.navigation.controls.maneuver</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="142196753%2FClasslikes%2F-747027718" anchor-label="AdditionalManeuverInfo" id="142196753%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-additional-maneuver-info/index.html"><span>Additional</span><wbr><span>Maneuver</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="142196753%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">interface </span><a href="-additional-maneuver-info/index.html">AdditionalManeuverInfo</a></div><div class="brief "><p class="paragraph">Additional maneuver information displayed below the primary maneuver. Each type carries its own specific data in a type-safe manner.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2067733734%2FClasslikes%2F-747027718" anchor-label="AdditionalManeuverUiState" id="2067733734%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-additional-maneuver-ui-state/index.html"><span>Additional</span><wbr><span>Maneuver</span><wbr><span>Ui</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2067733734%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-additional-maneuver-ui-state/index.html">AdditionalManeuverUiState</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>isVisible<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>info<span class="token operator">: </span><a href="-additional-maneuver-info/index.html">AdditionalManeuverInfo</a><span class="token operator"> = </span>AdditionalManeuverInfo.None</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">UI state for additional maneuver info (exit name/number or short preview of the following maneuver).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2130280811%2FClasslikes%2F-747027718" anchor-label="DefaultManeuverViewModel" id="-2130280811%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-default-maneuver-view-model/index.html"><span>Default</span><wbr><span>Maneuver</span><wbr><span>View</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2130280811%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-default-maneuver-view-model/index.html">DefaultManeuverViewModel</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">navigationManager<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.navigation/NavigationManager///PointingToDeclaration/">NavigationManager</span></span></span><span class="token punctuation">)</span> : <a href="-maneuver-view-model/index.html">ManeuverViewModel</a></div><div class="brief "><p class="paragraph">Provides upcoming maneuver state (icon, distance, road name) during navigation. Adds exit name or short preview of the next maneuver when applicable. Hidden when navigation finished, data unavailable or user is indoors.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1536458583%2FClasslikes%2F-747027718" anchor-label="ManeuverComposableColors" id="-1536458583%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-maneuver-composable-colors/index.html"><span>Maneuver</span><wbr><span>Composable</span><wbr><span><span>Colors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1536458583%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-maneuver-composable-colors/index.html">ManeuverComposableColors</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>background<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>text<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>additionalAlpha<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Color palette for ManeuverComposable (background, text, alpha).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1634620423%2FClasslikes%2F-747027718" anchor-label="ManeuverComposableDefaults" id="1634620423%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-maneuver-composable-defaults/index.html"><span>Maneuver</span><wbr><span>Composable</span><wbr><span><span>Defaults</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1634620423%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-maneuver-composable-defaults/index.html">ManeuverComposableDefaults</a></div><div class="brief "><p class="paragraph">Default values (colors, icons) for ManeuverComposable.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1955328657%2FClasslikes%2F-747027718" anchor-label="ManeuverComposableIcons" id="-1955328657%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-maneuver-composable-icons/index.html"><span>Maneuver</span><wbr><span>Composable</span><wbr><span><span>Icons</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1955328657%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-maneuver-composable-icons/index.html">ManeuverComposableIcons</a><span class="token operator"> = </span><span class="token punctuation">(</span><span data-unresolved-link="ru.dgis.sdk.navigation/InstructionManeuver///PointingToDeclaration/">InstructionManeuver</span><span class="token operator">?</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Customizable icon provider for maneuver indicators. Allows overriding default maneuver icons with custom drawables.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-36554453%2FClasslikes%2F-747027718" anchor-label="ManeuverState" id="-36554453%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-maneuver-state/index.html"><span>Maneuver</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-36554453%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-maneuver-state/index.html">ManeuverState</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>next<span class="token operator">: </span><a href="-next-maneuver-ui-state/index.html">NextManeuverUiState</a><span class="token operator"> = </span>NextManeuverUiState()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>additional<span class="token operator">: </span><a href="-additional-maneuver-ui-state/index.html">AdditionalManeuverUiState</a><span class="token operator"> = </span>AdditionalManeuverUiState()</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Combined maneuver state (primary + optional additional info) consumed by the composable.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="791627800%2FClasslikes%2F-747027718" anchor-label="ManeuverViewModel" id="791627800%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-maneuver-view-model/index.html"><span>Maneuver</span><wbr><span>View</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="791627800%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-maneuver-view-model/index.html">ManeuverViewModel</a></div><div class="brief "><p class="paragraph">Source of maneuver UI state. Implementations push updates as navigation progresses.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2044215602%2FClasslikes%2F-747027718" anchor-label="NextManeuverUiState" id="2044215602%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-next-maneuver-ui-state/index.html"><span>Next</span><wbr><span>Maneuver</span><wbr><span>Ui</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2044215602%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-next-maneuver-ui-state/index.html">NextManeuverUiState</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>isVisible<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>maneuver<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.navigation/InstructionManeuver///PointingToDeclaration/">InstructionManeuver</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isLeftHandTraffic<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>distanceMeters<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roadName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">UI state for the upcoming (next) maneuver displayed to the user.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-84188148%2FFunctions%2F-747027718" anchor-label="ManeuverComposable" id="-84188148%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-maneuver-composable.html"><span>Maneuver</span><wbr><span><span>Composable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-84188148%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-maneuver-composable.html"><span class="token function">ManeuverComposable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="-maneuver-view-model/index.html">ManeuverViewModel</a><span class="token punctuation">, </span></span><span class="parameter ">colors<span class="token operator">: </span><a href="-maneuver-composable-colors/index.html">ManeuverComposableColors</a><span class="token operator"> = </span>ManeuverComposableDefaults.colors()<span class="token punctuation">, </span></span><span class="parameter ">icons<span class="token operator">: </span><a href="-maneuver-composable-icons/index.html">ManeuverComposableIcons</a><span class="token operator"> = </span>ManeuverComposableDefaults.icons</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Displays navigation maneuver UI (next turn + optional additional info) in Compose.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 2Gis</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

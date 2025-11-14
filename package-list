@@ -1,0 +1,26 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:2Gis Map SDK for Compose
+ru.dgis.sdk.compose.map
+ru.dgis.sdk.compose.map.controls
+ru.dgis.sdk.compose.map.internal
+module:2Gis Full SDK for Compose
+ru.dgis.sdk.compose.navigation.controls.betterrouteprompt
+ru.dgis.sdk.compose.navigation.controls.dashboard
+ru.dgis.sdk.compose.navigation.controls.dashboard.internal
+ru.dgis.sdk.compose.navigation.controls.defaultcontrols.map
+ru.dgis.sdk.compose.navigation.controls.defaultcontrols.navigation
+ru.dgis.sdk.compose.navigation.controls.finishroute
+ru.dgis.sdk.compose.navigation.controls.indoor
+ru.dgis.sdk.compose.navigation.controls.maneuver
+ru.dgis.sdk.compose.navigation.controls.mapcontrols.compass
+ru.dgis.sdk.compose.navigation.controls.mapcontrols.follow
+ru.dgis.sdk.compose.navigation.controls.mapcontrols.zoom
+ru.dgis.sdk.compose.navigation.controls.message
+ru.dgis.sdk.compose.navigation.controls.navigatortraffic
+ru.dgis.sdk.compose.navigation.controls.parking
+ru.dgis.sdk.compose.navigation.controls.routeoverview
+ru.dgis.sdk.compose.navigation.controls.speedinfo
+ru.dgis.sdk.compose.navigation.controls.trafficandparking
+ru.dgis.sdk.compose.navigation.controls.trafficline
