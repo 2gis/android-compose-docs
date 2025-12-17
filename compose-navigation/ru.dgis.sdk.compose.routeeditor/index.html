@@ -1,0 +1,912 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ru.dgis.sdk.compose.routeeditor</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../styles/dgis.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../index.html">
+                    mobile-sdk
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":compose-navigation/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":compose-navigation/release" data-filter=":compose-navigation/release">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    mobile-sdk
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="2Gis Full SDK for Compose::ru.dgis.sdk.compose.routeeditor////PointingToDeclaration//-747027718">
+  <div class="breadcrumbs"><a href="../index.html">2Gis Full SDK for Compose</a><span class="delimiter">/</span><span class="current">ru.dgis.sdk.compose.routeeditor</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1139118850%2FClasslikes%2F-747027718" anchor-label="BriefRouteDurationProvider" id="-1139118850%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-brief-route-duration-provider/index.html"><span>Brief</span><wbr><span>Route</span><wbr><span>Duration</span><wbr><span><span>Provider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1139118850%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-brief-route-duration-provider/index.html">BriefRouteDurationProvider</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">trafficRouter<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.routing/TrafficRouter///PointingToDeclaration/">TrafficRouter</span><span class="token punctuation">, </span></span><span class="parameter ">coroutineDispatcher<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineDispatcher///PointingToDeclaration/">CoroutineDispatcher</span><span class="token operator"> = </span>Dispatchers.IO</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Provider for fetching ETA (Estimated Time of Arrival) for different transport modes using brief route information.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1449883071%2FClasslikes%2F-747027718" anchor-label="DefaultRouteEditorViewModel" id="-1449883071%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-default-route-editor-view-model/index.html"><span>Default</span><wbr><span>Route</span><wbr><span>Editor</span><wbr><span>View</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1449883071%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Stable.html"><span class="token annotation builtin">Stable</span></a></div></div><span class="token keyword">class </span><a href="-default-route-editor-view-model/index.html">DefaultRouteEditorViewModel</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>routeEditor<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.routing/RouteEditor///PointingToDeclaration/">RouteEditor</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>allowedTransportTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/EnumSet.html">EnumSet</a><span class="token operator">&lt;</span><a href="-transport-mode/index.html">TransportMode</a><span class="token operator">&gt;</span><span class="token operator"> = </span>EnumSet.allOf(TransportMode::class.java)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>briefRouteDurationProvider<span class="token operator">: </span><a href="-brief-route-duration-provider/index.html">BriefRouteDurationProvider</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>routeSearchOptionsProvider<span class="token operator">: </span><a href="-route-search-options-provider/index.html">RouteSearchOptionsProvider</a><span class="token operator"> = </span>DefaultRouteSearchOptionsProvider<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>onStartNavigation<span class="token operator">: </span><span class="token punctuation">(</span><span data-unresolved-link="ru.dgis.sdk.routing/TrafficRoute///PointingToDeclaration/">TrafficRoute</span><span class="token punctuation">, </span><span data-unresolved-link="ru.dgis.sdk.navigation/RouteBuildOptions///PointingToDeclaration/">RouteBuildOptions</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{ _, _ -&gt; }</span></span><span class="token punctuation">)</span> : <a href="-route-editor-view-model/index.html">RouteEditorViewModel</a>, <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-382686287%2FClasslikes%2F-747027718" anchor-label="DefaultRouteSearchOptionsProvider" id="-382686287%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-default-route-search-options-provider/index.html"><span>Default</span><wbr><span>Route</span><wbr><span>Search</span><wbr><span>Options</span><wbr><span><span>Provider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-382686287%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-default-route-search-options-provider/index.html">DefaultRouteSearchOptionsProvider</a> : <a href="-route-search-options-provider/index.html">RouteSearchOptionsProvider</a></div><div class="brief "><p class="paragraph">Default implementation of <a href="-route-search-options-provider/index.html">RouteSearchOptionsProvider</a> that uses standard SDK options for all transport modes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-899057920%2FClasslikes%2F-747027718" anchor-label="FeatureType" id="-899057920%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-feature-type/index.html"><span>Feature</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-899057920%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-feature-type/index.html">FeatureType</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-feature-type/index.html">FeatureType</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Types of route features with associated visual properties and priority Priority order matches the design specification from highest to lowest</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-786658009%2FClasslikes%2F-747027718" anchor-label="RouteCardColors" id="-786658009%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-card-colors/index.html"><span>Route</span><wbr><span>Card</span><wbr><span><span>Colors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-786658009%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-route-card-colors/index.html">RouteCardColors</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>cardBackground<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.SurfaceWhite<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>primaryText<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.PrimaryText<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>secondaryText<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.SecondaryText<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>buttonBackground<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.Primary<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>buttonText<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.SurfaceWhite</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Color scheme for route cards</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1864050070%2FClasslikes%2F-747027718" anchor-label="RouteCardDimensions" id="-1864050070%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-card-dimensions/index.html"><span>Route</span><wbr><span>Card</span><wbr><span><span>Dimensions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1864050070%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-route-card-dimensions/index.html">RouteCardDimensions</a></div><div class="brief "><p class="paragraph">Dimensions for route card components</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="97045930%2FClasslikes%2F-747027718" anchor-label="RouteEditorColors" id="97045930%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-editor-colors/index.html"><span>Route</span><wbr><span>Editor</span><wbr><span><span>Colors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="97045930%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-route-editor-colors/index.html">RouteEditorColors</a></div><div class="brief "><p class="paragraph">Brand colors used throughout the application</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="235281309%2FClasslikes%2F-747027718" anchor-label="RouteEditorComposableColors" id="235281309%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-editor-composable-colors/index.html"><span>Route</span><wbr><span>Editor</span><wbr><span>Composable</span><wbr><span><span>Colors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="235281309%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-route-editor-composable-colors/index.html">RouteEditorComposableColors</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>routePointsDisplayColors<span class="token operator">: </span><a href="-route-points-display-colors/index.html">RoutePointsDisplayColors</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transportationModesColors<span class="token operator">: </span><a href="-transportation-modes-colors/index.html">TransportationModesColors</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>routeCardColors<span class="token operator">: </span><a href="-route-card-colors/index.html">RouteCardColors</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bottomSheetSurfaceColor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Aggregated colors for the RouteEditorComposable and its children</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2086795509%2FClasslikes%2F-747027718" anchor-label="RouteEditorTextStyles" id="-2086795509%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-editor-text-styles/index.html"><span>Route</span><wbr><span>Editor</span><wbr><span>Text</span><wbr><span><span>Styles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2086795509%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-route-editor-text-styles/index.html">RouteEditorTextStyles</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>Primary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+            fontSize = 19.sp,
+            fontWeight = FontWeight.Medium, // 500
+            color = RouteEditorColors.PrimaryText,
+        )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Secondary<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+            fontSize = 15.sp,
+            fontWeight = FontWeight.Normal, // 400
+            color = RouteEditorColors.SecondaryText,
+        )<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ETA<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/text/TextStyle.html">TextStyle</a><span class="token operator"> = </span>TextStyle(
+            fontSize = 14.sp,
+            fontWeight = FontWeight.Medium,
+            color = RouteEditorColors.PrimaryText,
+    )</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Brand text styles with consistent typography</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1549095765%2FClasslikes%2F-747027718" anchor-label="RouteEditorUiState" id="-1549095765%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-editor-ui-state/index.html"><span>Route</span><wbr><span>Editor</span><wbr><span>Ui</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1549095765%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-route-editor-ui-state/index.html">RouteEditorUiState</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>startPointTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"--"</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>destinationPointTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"--"</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>routes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-route-ui-info/index.html">RouteUiInfo</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>selectedTransportMode<span class="token operator">: </span><a href="-transport-mode/index.html">TransportMode</a><span class="token operator"> = </span>TransportMode.CAR<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>selectedRouteIndex<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>intermediatePoints<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-ui-intermediate-route-point/index.html">UiIntermediateRoutePoint</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>durations<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="-transport-mode/index.html">TransportMode</a><span class="token punctuation">, </span><span data-unresolved-link="ru.dgis.sdk/Duration///PointingToDeclaration/">Duration</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyMap()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>allowedTransportTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/EnumSet.html">EnumSet</a><span class="token operator">&lt;</span><a href="-transport-mode/index.html">TransportMode</a><span class="token operator">&gt;</span><span class="token operator"> = </span>EnumSet.allOf(TransportMode::class.java)</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-604350556%2FClasslikes%2F-747027718" anchor-label="RouteEditorViewModel" id="-604350556%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-editor-view-model/index.html"><span>Route</span><wbr><span>Editor</span><wbr><span>View</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-604350556%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-route-editor-view-model/index.html">RouteEditorViewModel</a></div><div class="brief "><p class="paragraph">ViewModel for managing route planning and editing functionality.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1962129445%2FClasslikes%2F-747027718" anchor-label="RouteFeature" id="1962129445%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-feature/index.html"><span>Route</span><wbr><span><span>Feature</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1962129445%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-route-feature/index.html">RouteFeature</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="-feature-type/index.html">FeatureType</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>quantity<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Represents a feature or attribute of a route (e.g., traffic, tolls, accidents, road conditions)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1508200052%2FClasslikes%2F-747027718" anchor-label="RoutePointsDisplayColors" id="-1508200052%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-points-display-colors/index.html"><span>Route</span><wbr><span>Points</span><wbr><span>Display</span><wbr><span><span>Colors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1508200052%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-route-points-display-colors/index.html">RoutePointsDisplayColors</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>background<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.SurfaceWhite<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>surfaceWhite<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.SurfaceWhite<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>listBackground<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>Color(0xFFF5F5F5)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>divider<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>Color(0xFFE0E0E0)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>draggingBackground<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>Color(0xFFEEEEEE)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>primaryGreen<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.Primary<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>primaryText<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>Color.Black<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>secondaryText<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>Color.Gray<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>startPointIcon<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.Primary<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>endPointIcon<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.Accent<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>intermediatePointIcon<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.Accent<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>removeButtonTint<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.IconFill<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dragHandleTint<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>Color.Gray<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>verticalConnector<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>Color(0xFFDDDDDD)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>iconBackground<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.IconBackground</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-833510700%2FClasslikes%2F-747027718" anchor-label="RouteSearchOptionsProvider" id="-833510700%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-search-options-provider/index.html"><span>Route</span><wbr><span>Search</span><wbr><span>Options</span><wbr><span><span>Provider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-833510700%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-route-search-options-provider/index.html">RouteSearchOptionsProvider</a></div><div class="brief "><p class="paragraph">Provider interface for creating route search options for different transport modes. Each method has a default implementation that can be overridden to customize routing behavior for specific transport modes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-544513627%2FClasslikes%2F-747027718" anchor-label="RouteUiInfo" id="-544513627%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-ui-info/index.html"><span>Route</span><wbr><span>Ui</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-544513627%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-route-ui-info/index.html">RouteUiInfo</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>duration<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk/Duration///PointingToDeclaration/">Duration</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>distanceMeters<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/StringRes.html"><span class="token annotation builtin">StringRes</span></a>&nbsp;</span><span class="token keyword">val </span>descriptionRes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>features<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-route-feature/index.html">RouteFeature</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Data class representing route information</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-703660417%2FClasslikes%2F-747027718" anchor-label="RouteUiPoint" id="-703660417%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-ui-point/index.html"><span>Route</span><wbr><span>Ui</span><wbr><span><span>Point</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-703660417%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-route-ui-point/index.html">RouteUiPoint</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>routeSearchPoint<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.routing/RouteSearchPoint///PointingToDeclaration/">RouteSearchPoint</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>label<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Represents a route point with an optional custom label for display in the UI.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-507549476%2FClasslikes%2F-747027718" anchor-label="TransportationModesColors" id="-507549476%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-colors/index.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span><span>Colors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-507549476%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-transportation-modes-colors/index.html">TransportationModesColors</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>background<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.BackgroundGrey<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>selectedItemBackground<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.SurfaceWhite<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>unselectedItemBackground<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>Color.Transparent<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>selectedIconTint<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorTextStyles.default.Primary.color<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>unselectedIconTint<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorTextStyles.default.Secondary.color<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>selectedTextColor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorTextStyles.default.Primary.color<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>unselectedTextColor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorTextStyles.default.Secondary.color<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>selectedTransportTypeBorderColor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/graphics/Color.html">Color</a><span class="token operator"> = </span>RouteEditorColors.Primary</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Color scheme for transportation modes components</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1130607196%2FClasslikes%2F-747027718" anchor-label="TransportMode" id="-1130607196%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transport-mode/index.html"><span>Transport</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1130607196%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">enum </span><a href="-transport-mode/index.html">TransportMode</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-transport-mode/index.html">TransportMode</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Transportation mode options with drawable resources</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1533683358%2FClasslikes%2F-747027718" anchor-label="UiIntermediateRoutePoint" id="1533683358%2FClasslikes%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ui-intermediate-route-point/index.html"><span>Ui</span><wbr><span>Intermediate</span><wbr><span>Route</span><wbr><span><span>Point</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1533683358%2FClasslikes%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Immutable.html"><span class="token annotation builtin">Immutable</span></a></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-ui-intermediate-route-point/index.html">UiIntermediateRoutePoint</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>title<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>idx<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-383831922%2FFunctions%2F-747027718" anchor-label="ExpandedRoutePointsDarkPreview" id="-383831922%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-expanded-route-points-dark-preview.html"><span>Expanded</span><wbr><span>Route</span><wbr><span>Points</span><wbr><span>Dark</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-383831922%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Expanded - Dark"</span></span><span class="token punctuation">, </span></span><wbr><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>heightDp<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">600</span></span><span class="token punctuation">, </span></span><wbr><span>uiMode<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">32</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-expanded-route-points-dark-preview.html"><span class="token function">ExpandedRoutePointsDarkPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="821587592%2FFunctions%2F-747027718" anchor-label="ExpandedRoutePointsLightPreview" id="821587592%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-expanded-route-points-light-preview.html"><span>Expanded</span><wbr><span>Route</span><wbr><span>Points</span><wbr><span>Light</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="821587592%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Expanded - Light"</span></span><span class="token punctuation">, </span></span><wbr><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>heightDp<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">600</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-expanded-route-points-light-preview.html"><span class="token function">ExpandedRoutePointsLightPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-510024424%2FFunctions%2F-747027718" anchor-label="RouteCard" id="-510024424%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-card.html"><span>Route</span><wbr><span><span>Card</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-510024424%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-card.html"><span class="token function">RouteCard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">routeUiInfo<span class="token operator">: </span><a href="-route-ui-info/index.html">RouteUiInfo</a><span class="token punctuation">, </span></span><span class="parameter ">modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token operator"> = </span>Modifier<span class="token punctuation">, </span></span><span class="parameter ">isExpanded<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">colors<span class="token operator">: </span><a href="-route-card-colors/index.html">RouteCardColors</a><span class="token operator"> = </span>RouteCardColors.colors()<span class="token punctuation">, </span></span><span class="parameter ">textStyles<span class="token operator">: </span><a href="-route-editor-text-styles/index.html">RouteEditorTextStyles</a><span class="token operator"> = </span>RouteEditorTextStyles.default<span class="token punctuation">, </span></span><span class="parameter ">onCardClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}<span class="token punctuation">, </span></span><span class="parameter ">onActionButtonClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Individual route card component that displays route information</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1262161629%2FFunctions%2F-747027718" anchor-label="RouteCardCollapsedPreview" id="-1262161629%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-card-collapsed-preview.html"><span>Route</span><wbr><span>Card</span><wbr><span>Collapsed</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1262161629%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Collapsed (1 line) - Route Cards"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-card-collapsed-preview.html"><span class="token function">RouteCardCollapsedPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="910707405%2FFunctions%2F-747027718" anchor-label="RouteCardDarkCollapsedPreview" id="910707405%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-card-dark-collapsed-preview.html"><span>Route</span><wbr><span>Card</span><wbr><span>Dark</span><wbr><span>Collapsed</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="910707405%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>backgroundColor<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">4280032286</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Dark - Collapsed (1 line)"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-card-dark-collapsed-preview.html"><span class="token function">RouteCardDarkCollapsedPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1805692493%2FFunctions%2F-747027718" anchor-label="RouteCardDarkExpandedPreview" id="1805692493%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-card-dark-expanded-preview.html"><span>Route</span><wbr><span>Card</span><wbr><span>Dark</span><wbr><span>Expanded</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1805692493%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>backgroundColor<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">4280032286</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Dark - Expanded (2 lines)"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-card-dark-expanded-preview.html"><span class="token function">RouteCardDarkExpandedPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="500813041%2FFunctions%2F-747027718" anchor-label="RouteCardDarkMixedPreview" id="500813041%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-card-dark-mixed-preview.html"><span>Route</span><wbr><span>Card</span><wbr><span>Dark</span><wbr><span>Mixed</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="500813041%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>backgroundColor<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">4280032286</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Dark - Mixed States"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-card-dark-mixed-preview.html"><span class="token function">RouteCardDarkMixedPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1181410615%2FFunctions%2F-747027718" anchor-label="RouteCardExpandedPreview" id="1181410615%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-card-expanded-preview.html"><span>Route</span><wbr><span>Card</span><wbr><span>Expanded</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1181410615%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Expanded (2 lines) - Route Cards"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-card-expanded-preview.html"><span class="token function">RouteCardExpandedPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-427896482%2FFunctions%2F-747027718" anchor-label="RouteCardPreview" id="-427896482%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-card-preview.html"><span>Route</span><wbr><span>Card</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-427896482%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Mixed States - Route Cards"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-card-preview.html"><span class="token function">RouteCardPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="46054524%2FFunctions%2F-747027718" anchor-label="RouteEditorComposable" id="46054524%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-editor-composable.html"><span>Route</span><wbr><span>Editor</span><wbr><span><span>Composable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="46054524%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-editor-composable.html"><span class="token function">RouteEditorComposable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="-route-editor-view-model/index.html">RouteEditorViewModel</a><span class="token punctuation">, </span></span><span class="parameter ">modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token operator"> = </span>Modifier<span class="token punctuation">, </span></span><span class="parameter ">colors<span class="token operator">: </span><a href="-route-editor-composable-colors/index.html">RouteEditorComposableColors</a><span class="token operator"> = </span>RouteEditorComposableColors.colors()<span class="token punctuation">, </span></span><span class="parameter ">textStyles<span class="token operator">: </span><a href="-route-editor-text-styles/index.html">RouteEditorTextStyles</a><span class="token operator"> = </span>RouteEditorTextStyles.default<span class="token punctuation">, </span></span><span class="parameter ">routeCard<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a>&nbsp;</span><span class="token punctuation">(</span>routeUiInfo<span class="token operator">: </span><a href="-route-ui-info/index.html">RouteUiInfo</a><span class="token punctuation">, </span>isExpanded<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>onCardClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span>onActionButtonClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{ routeUiInfo, isExpanded, onCardClick, onActionButtonClick -&gt;
+        RouteCard(
+            routeUiInfo = routeUiInfo,
+            modifier = Modifier,
+            isExpanded = isExpanded,
+            onCardClick = onCardClick,
+            colors = colors.routeCardColors,
+            textStyles = textStyles,
+            onActionButtonClick = onActionButtonClick,
+        )
+    }<span class="token punctuation">, </span></span><span class="parameter ">routePointsDisplay<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a>&nbsp;</span><span class="token punctuation">(</span>startPointTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>destinationPointTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>intermediatePoints<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-ui-intermediate-route-point/index.html">UiIntermediateRoutePoint</a><span class="token operator">&gt;</span><span class="token punctuation">, </span>onSwapDestinationsClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span>onCloseButtonClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span>onIntermediatePointsChanged<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-ui-intermediate-route-point/index.html">UiIntermediateRoutePoint</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{
+        startPointTitle,
+        destinationPointTitle,
+        intermediatePoints,
+        onSwapDestinationsClick,
+        onCloseButtonClick,
+        onIntermediatePointsChanged,
+        -&gt;
+        RoutePointsDisplay(
+            startPointTitle = startPointTitle,
+            destinationPointTitle = destinationPointTitle,
+            intermediatePoints = intermediatePoints,
+            onSwapDestinationsClick = onSwapDestinationsClick,
+            onCloseClick = onCloseButtonClick,
+            onIntermediatePointsChanged = onIntermediatePointsChanged,
+            colors = colors.routePointsDisplayColors,
+            textStyles = textStyles,
+        )
+    }<span class="token punctuation">, </span></span><span class="parameter ">transportationModesRow<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a>&nbsp;</span><span class="token punctuation">(</span>modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token punctuation">, </span>selectedMode<span class="token operator">: </span><a href="-transport-mode/index.html">TransportMode</a><span class="token punctuation">, </span>onModeSelected<span class="token operator">: </span><span class="token punctuation">(</span><a href="-transport-mode/index.html">TransportMode</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span>durations<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="-transport-mode/index.html">TransportMode</a><span class="token punctuation">, </span><span data-unresolved-link="ru.dgis.sdk/Duration///PointingToDeclaration/">Duration</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token punctuation">, </span>allowedTransportTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/EnumSet.html">EnumSet</a><span class="token operator">&lt;</span><a href="-transport-mode/index.html">TransportMode</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{ localModifier, selectedMode, onModeSelected, durations, allowedTransportTypes -&gt;
+        TransportationModesRow(
+            modifier = localModifier,
+            selectedMode = selectedMode,
+            onModeSelected = onModeSelected,
+            durations = durations,
+            allowedTransportTypes = allowedTransportTypes,
+            colors = colors.transportationModesColors,
+            textStyles = textStyles,
+        )
+    }<span class="token punctuation">, </span></span><span class="parameter ">onCloseClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Navigation bottom sheet content that matches the Figma design This is the content that goes inside the ThreeStateBottomSheet</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-60460248%2FFunctions%2F-747027718" anchor-label="RouteEditorComposablePreview" id="-60460248%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-editor-composable-preview.html"><span>Route</span><wbr><span>Editor</span><wbr><span>Composable</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-60460248%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>heightDp<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">400</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-editor-composable-preview.html"><span class="token function">RouteEditorComposablePreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1919183025%2FFunctions%2F-747027718" anchor-label="RoutePointsDisplay" id="1919183025%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-points-display.html"><span>Route</span><wbr><span>Points</span><wbr><span><span>Display</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1919183025%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-points-display.html"><span class="token function">RoutePointsDisplay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">startPointTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">destinationPointTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token operator"> = </span>Modifier<span class="token punctuation">, </span></span><span class="parameter ">colors<span class="token operator">: </span><a href="-route-points-display-colors/index.html">RoutePointsDisplayColors</a><span class="token operator"> = </span>RoutePointsDisplayColors.colors()<span class="token punctuation">, </span></span><span class="parameter ">textStyles<span class="token operator">: </span><a href="-route-editor-text-styles/index.html">RouteEditorTextStyles</a><span class="token operator"> = </span>RouteEditorTextStyles.default<span class="token punctuation">, </span></span><span class="parameter ">routeDuration<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">intermediatePoints<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-ui-intermediate-route-point/index.html">UiIntermediateRoutePoint</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">onIntermediatePointsChanged<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-ui-intermediate-route-point/index.html">UiIntermediateRoutePoint</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}<span class="token punctuation">, </span></span><span class="parameter ">onSwapDestinationsClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}<span class="token punctuation">, </span></span><span class="parameter ">onCloseClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Component that displays start and destination points with interchange and close functionality</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1753597508%2FFunctions%2F-747027718" anchor-label="RoutePointsDisplayCustomColorsPreview" id="-1753597508%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-points-display-custom-colors-preview.html"><span>Route</span><wbr><span>Points</span><wbr><span>Display</span><wbr><span>Custom</span><wbr><span>Colors</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1753597508%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Custom Colors"</span></span><span class="token punctuation">, </span></span><wbr><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-points-display-custom-colors-preview.html"><span class="token function">RoutePointsDisplayCustomColorsPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1666269455%2FFunctions%2F-747027718" anchor-label="RoutePointsDisplayDarkPreview" id="-1666269455%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-points-display-dark-preview.html"><span>Route</span><wbr><span>Points</span><wbr><span>Display</span><wbr><span>Dark</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1666269455%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Dark Theme"</span></span><span class="token punctuation">, </span></span><wbr><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>uiMode<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">32</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-points-display-dark-preview.html"><span class="token function">RoutePointsDisplayDarkPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-279270267%2FFunctions%2F-747027718" anchor-label="RoutePointsDisplayLightPreview" id="-279270267%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-route-points-display-light-preview.html"><span>Route</span><wbr><span>Points</span><wbr><span>Display</span><wbr><span>Light</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-279270267%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Light Theme"</span></span><span class="token punctuation">, </span></span><wbr><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-points-display-light-preview.html"><span class="token function">RoutePointsDisplayLightPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2039994054%2FFunctions%2F-747027718" anchor-label="ThreeStateBottomSheetPreview" id="2039994054%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-three-state-bottom-sheet-preview.html"><span>Three</span><wbr><span>State</span><wbr><span>Bottom</span><wbr><span>Sheet</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2039994054%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-three-state-bottom-sheet-preview.html"><span class="token function">ThreeStateBottomSheetPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1083165651%2FFunctions%2F-747027718" anchor-label="TransportationModesRow" id="-1083165651%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span><span>Row</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1083165651%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row.html"><span class="token function">TransportationModesRow</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">selectedMode<span class="token operator">: </span><a href="-transport-mode/index.html">TransportMode</a><span class="token punctuation">, </span></span><span class="parameter ">onModeSelected<span class="token operator">: </span><span class="token punctuation">(</span><a href="-transport-mode/index.html">TransportMode</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span></span><span class="parameter ">durations<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="-transport-mode/index.html">TransportMode</a><span class="token punctuation">, </span><span data-unresolved-link="ru.dgis.sdk/Duration///PointingToDeclaration/">Duration</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">allowedTransportTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/EnumSet.html">EnumSet</a><span class="token operator">&lt;</span><a href="-transport-mode/index.html">TransportMode</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token operator"> = </span>Modifier<span class="token punctuation">, </span></span><span class="parameter ">colors<span class="token operator">: </span><a href="-transportation-modes-colors/index.html">TransportationModesColors</a><span class="token operator"> = </span>TransportationModesColors.defaultLight()<span class="token punctuation">, </span></span><span class="parameter ">textStyles<span class="token operator">: </span><a href="-route-editor-text-styles/index.html">RouteEditorTextStyles</a><span class="token operator"> = </span>RouteEditorTextStyles.default</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Transportation modes row component</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-779372620%2FFunctions%2F-747027718" anchor-label="TransportationModesRowAllModesCarPreview" id="-779372620%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-all-modes-car-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>All</span><wbr><span>Modes</span><wbr><span>Car</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-779372620%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Light - All Modes - Car Selected"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-all-modes-car-preview.html"><span class="token function">TransportationModesRowAllModesCarPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2131903968%2FFunctions%2F-747027718" anchor-label="TransportationModesRowAllModesPublicTransportPreview" id="-2131903968%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-all-modes-public-transport-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>All</span><wbr><span>Modes</span><wbr><span>Public</span><wbr><span>Transport</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2131903968%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Light - All Modes - Public Transport Selected"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-all-modes-public-transport-preview.html"><span class="token function">TransportationModesRowAllModesPublicTransportPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1168133280%2FFunctions%2F-747027718" anchor-label="TransportationModesRowDarkAllModesPreview" id="1168133280%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-dark-all-modes-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>Dark</span><wbr><span>All</span><wbr><span>Modes</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1168133280%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>backgroundColor<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">4280032286</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Dark - All Modes - Car Selected"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-dark-all-modes-preview.html"><span class="token function">TransportationModesRowDarkAllModesPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-329771752%2FFunctions%2F-747027718" anchor-label="TransportationModesRowDarkBicyclePreview" id="-329771752%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-dark-bicycle-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>Dark</span><wbr><span>Bicycle</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-329771752%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>backgroundColor<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">4280032286</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Dark - Bicycle Selected"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-dark-bicycle-preview.html"><span class="token function">TransportationModesRowDarkBicyclePreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1020633429%2FFunctions%2F-747027718" anchor-label="TransportationModesRowDarkLoadingPreview" id="1020633429%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-dark-loading-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>Dark</span><wbr><span>Loading</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1020633429%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>backgroundColor<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">4280032286</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Dark - Loading State"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-dark-loading-preview.html"><span class="token function">TransportationModesRowDarkLoadingPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1773963559%2FFunctions%2F-747027718" anchor-label="TransportationModesRowDarkPublicTransportPreview" id="-1773963559%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-dark-public-transport-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>Dark</span><wbr><span>Public</span><wbr><span>Transport</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1773963559%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>backgroundColor<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">4280032286</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Dark - Public Transport Selected"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-dark-public-transport-preview.html"><span class="token function">TransportationModesRowDarkPublicTransportPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="755306155%2FFunctions%2F-747027718" anchor-label="TransportationModesRowLoadingPreview" id="755306155%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-loading-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>Loading</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="755306155%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Light - Loading State"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-loading-preview.html"><span class="token function">TransportationModesRowLoadingPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2014283551%2FFunctions%2F-747027718" anchor-label="TransportationModesRowMixedDurationsPreview" id="2014283551%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-mixed-durations-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>Mixed</span><wbr><span>Durations</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2014283551%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Light - Mixed Durations (Some Loading)"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-mixed-durations-preview.html"><span class="token function">TransportationModesRowMixedDurationsPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="248240566%2FFunctions%2F-747027718" anchor-label="TransportationModesRowPedestrianPreview" id="248240566%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-pedestrian-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>Pedestrian</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="248240566%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Light - Pedestrian Selected"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-pedestrian-preview.html"><span class="token function">TransportationModesRowPedestrianPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1733089414%2FFunctions%2F-747027718" anchor-label="TransportationModesRowSingleModePreview" id="1733089414%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-single-mode-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>Single</span><wbr><span>Mode</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1733089414%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Edge Case - Single Mode"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-single-mode-preview.html"><span class="token function">TransportationModesRowSingleModePreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="582870941%2FFunctions%2F-747027718" anchor-label="TransportationModesRowSubsetPreview" id="582870941%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-subset-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>Subset</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="582870941%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Light - Subset of Modes"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-subset-preview.html"><span class="token function">TransportationModesRowSubsetPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1717968833%2FFunctions%2F-747027718" anchor-label="TransportationModesRowTwoModesPreview" id="-1717968833%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transportation-modes-row-two-modes-preview.html"><span>Transportation</span><wbr><span>Modes</span><wbr><span>Row</span><wbr><span>Two</span><wbr><span>Modes</span><wbr><span><span>Preview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1717968833%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/tooling/preview/Preview.html"><span class="token annotation builtin">Preview</span></a><span class="token punctuation">(</span><span>showBackground<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span><span class="token punctuation">, </span></span><wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Edge Case - Two Modes Only"</span></span></span><wbr><span class="token punctuation">)</span></div><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transportation-modes-row-two-modes-preview.html"><span class="token function">TransportationModesRowTwoModesPreview</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-203725042%2FFunctions%2F-747027718" anchor-label="TransportModeItem" id="-203725042%2FFunctions%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transport-mode-item.html"><span>Transport</span><wbr><span>Mode</span><wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-203725042%2FFunctions%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-transport-mode-item.html"><span class="token function">TransportModeItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="-transport-mode/index.html">TransportMode</a><span class="token punctuation">, </span></span><span class="parameter ">isSelected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">onClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span></span><span class="parameter ">eta<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token operator"> = </span>Modifier<span class="token punctuation">, </span></span><span class="parameter ">colors<span class="token operator">: </span><a href="-transportation-modes-colors/index.html">TransportationModesColors</a><span class="token operator"> = </span>TransportationModesColors.colors()<span class="token punctuation">, </span></span><span class="parameter ">textStyles<span class="token operator">: </span><a href="-route-editor-text-styles/index.html">RouteEditorTextStyles</a><span class="token operator"> = </span>RouteEditorTextStyles.default</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Transportation mode selector item</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 2Gis</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
