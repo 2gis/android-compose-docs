@@ -6,6 +6,8 @@ ru.dgis.sdk.compose.map
 ru.dgis.sdk.compose.map.controls
 ru.dgis.sdk.compose.map.internal
 ru.dgis.sdk.compose.map.minimap
+ru.dgis.sdk.compose.search.controls.searchresultitem
+ru.dgis.sdk.compose.search.defaultcontrols
 module:2Gis Full SDK for Compose
 ru.dgis.sdk.compose.navigation.controls.betterrouteprompt
 ru.dgis.sdk.compose.navigation.controls.dashboard

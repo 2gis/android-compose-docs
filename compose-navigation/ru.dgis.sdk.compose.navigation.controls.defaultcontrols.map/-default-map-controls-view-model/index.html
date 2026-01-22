@@ -33,6 +33,8 @@
 <script type="text/javascript" src="../../../scripts/prism.js" async></script>
 <script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
 <script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+<link href="../../../images/logo-icon.svg">
 <link href="../../../styles/dgis.css" rel="Stylesheet"></head>
 <body>
     <div class="root">
@@ -43,7 +45,18 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-        </div>
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;ru.dgis.sdk.compose.navigation.controls.defaultcontrols.map/-default-map-controls-view-model/index.html&quot;}"><div class="dropdown versions-dropdown" data-role="dropdown">
+  <div class="button button_dropdown versions-dropdown-button" role="combobox" data-role="dropdown-toggle" aria-controls="versions-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select version" tabindex="0">13.2.0</div>
+  <div class="dropdown--list dropdown--list_positioned_left versions-dropdown-data" role="listbox" data-role="dropdown-listbox" aria-label="Versions" id="versions-listbox">
+    <div class="dropdown--header" data-remove-style="true" style="display: none"><span>Select version</span><button class="button" data-role="dropdown-toggle" aria-label="Close versions selection"><i class="ui-kit-icon ui-kit-icon_cross"></i></button></div>
+    <div><a href="index.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.2.0</a></div>
+    <div><a href="../../../older/13.1.0/compose-navigation/ru.dgis.sdk.compose.navigation.controls.defaultcontrols.map/-default-map-controls-view-model/index.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.1.0</a></div>
+    <div><a href="../../../older/12.10.0/compose-navigation/ru.dgis.sdk.compose.navigation.controls.defaultcontrols.map/-default-map-controls-view-model/index.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.10.0</a></div>
+    <div><a href="../../../older/12.9.0/compose-navigation/ru.dgis.sdk.compose.navigation.controls.defaultcontrols.map/-default-map-controls-view-model/index.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.9.0</a></div>
+  </div>
+  <div class="dropdown--overlay"></div>
+</div>
+</dokka-template-command>        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":compose-navigation/release">androidJvm</button>
@@ -95,7 +108,7 @@
   <div class="breadcrumbs"><a href="../../index.html">2Gis Full SDK for Compose</a><span class="delimiter">/</span><a href="../index.html">ru.dgis.sdk.compose.navigation.controls.defaultcontrols.map</a><span class="delimiter">/</span><span class="current">DefaultMapControlsViewModel</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Default</span><wbr><span>Map</span><wbr><span>Controls</span><wbr><span>View</span><wbr><span><span>Model</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">DefaultMapControlsViewModel</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/Map///PointingToDeclaration/">Map</span><span class="token punctuation">, </span></span><span class="parameter ">navigationManager<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.navigation/NavigationManager///PointingToDeclaration/">NavigationManager</span></span></span><span class="token punctuation">)</span> : <a href="../-map-controls-view-model/index.html">MapControlsViewModel</a></div><p class="paragraph">Default implementation of MapControlsViewModel.</p><p class="paragraph">This ViewModel manages the visibility of map controls based on available space and navigation state. For proper operation, the free roam state must be set via <a href="set-is-free-roam.html">setIsFreeRoam</a> method, which affects the visibility of certain controls like the add road event button.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">DefaultMapControlsViewModel</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>map<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.map/Map///PointingToDeclaration/">Map</span><span class="token punctuation">, </span></span><span class="parameter ">navigationManager<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.navigation/NavigationManager///PointingToDeclaration/">NavigationManager</span></span></span><span class="token punctuation">)</span> : <a href="../-map-controls-view-model/index.html">MapControlsViewModel</a></div><p class="paragraph">Default implementation of MapControlsViewModel.</p><p class="paragraph">This ViewModel manages the visibility of map controls based on available space and navigation state. For proper operation, the free roam state must be set via <a href="set-is-free-roam.html">setIsFreeRoam</a> method, which affects the visibility of certain controls like the add road event button.</p><h2 class="">Measurement mechanism</h2><p class="paragraph">Controls visibility is calculated based on their measured heights and available space. The measurement flow works as follows:</p><ol><li><p class="paragraph">All visibility states are initialized to <code class="lang-kotlin">true</code> so controls can render and be measured</p></li><li><p class="paragraph">Composable reports each control's height via <code class="lang-kotlin">set*Height()</code> methods</p></li><li><p class="paragraph">Once all heights are known, <a href="../../../compose-navigation/ru.dgis.sdk.compose.navigation.controls.defaultcontrols.map/-default-map-controls-view-model/update-map-controls-visibility-internal.html">updateMapControlsVisibilityInternal</a> calculates which controls fit</p></li><li><p class="paragraph">Controls that don't fit are hidden (visibility = false)</p></li></ol><h2 class="">Composable-side requirements</h2><p class="paragraph">The Composable must report height ONLY when the control is visible. Otherwise, a measurement loop occurs:</p><ol><li><p class="paragraph">Control visible -&gt; height = 255 -&gt; ViewModel hides control</p></li><li><p class="paragraph">Control hidden -&gt; height = 10 (empty) -&gt; ViewModel shows control</p></li><li><p class="paragraph">Repeat infinitely (UI flickers)</p></li></ol><p class="paragraph">Correct implementation in MapControl:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">.onSizeChanged {<br>    if (visibility) {  // Only measure when visible<br>        onHeightChanged(it.height)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -372,7 +385,7 @@
 </div>
     <div class="footer">
         <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
-        <span>© 2025 2Gis</span>
+        <span>© 2026 2Gis</span>
         <span class="pull-right">
             <span>Generated by </span>
             <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
