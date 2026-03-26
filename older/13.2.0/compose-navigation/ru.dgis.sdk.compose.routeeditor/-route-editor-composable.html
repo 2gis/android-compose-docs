@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>RouteEditorComposable</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../styles/multimodule.css" rel="Stylesheet">
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dgis.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../index.html">
+                    mobile-sdk
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;ru.dgis.sdk.compose.routeeditor/-route-editor-composable.html&quot;}"><div class="dropdown versions-dropdown" data-role="dropdown">
+  <div class="button button_dropdown versions-dropdown-button" role="combobox" data-role="dropdown-toggle" aria-controls="versions-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select version" tabindex="0">13.2.0</div>
+  <div class="dropdown--list dropdown--list_positioned_left versions-dropdown-data" role="listbox" data-role="dropdown-listbox" aria-label="Versions" id="versions-listbox">
+    <div class="dropdown--header" data-remove-style="true" style="display: none"><span>Select version</span><button class="button" data-role="dropdown-toggle" aria-label="Close versions selection"><i class="ui-kit-icon ui-kit-icon_cross"></i></button></div>
+    <div><a href="../../../../compose-navigation/ru.dgis.sdk.compose.routeeditor/-route-editor-composable.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.3.0</a></div>
+    <div><a href="-route-editor-composable.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.2.0</a></div>
+    <div><a href="../../../13.1.0/compose-navigation/ru.dgis.sdk.compose.routeeditor/-route-editor-composable.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.1.0</a></div>
+    <div><a href="../../../../not-found-version.html?v=12.10.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.10.0</a></div>
+    <div><a href="../../../../not-found-version.html?v=12.9.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.9.0</a></div>
+  </div>
+  <div class="dropdown--overlay"></div>
+</div>
+</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":compose-navigation/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":compose-navigation/release" data-filter=":compose-navigation/release">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    mobile-sdk
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageids="2Gis Full SDK for Compose::ru.dgis.sdk.compose.routeeditor//RouteEditorComposable/#ru.dgis.sdk.compose.routeeditor.RouteEditorViewModel#androidx.compose.ui.Modifier#ru.dgis.sdk.compose.routeeditor.RouteEditorComposableColors#ru.dgis.sdk.compose.routeeditor.RouteEditorTextStyles#kotlin.Function4[ru.dgis.sdk.compose.routeeditor.RouteUiInfo,kotlin.Boolean,kotlin.Function0[kotlin.Unit],kotlin.Function0[kotlin.Unit],kotlin.Unit]#kotlin.Function6[kotlin.String,kotlin.String,kotlin.collections.List[ru.dgis.sdk.compose.routeeditor.UiIntermediateRoutePoint],kotlin.Function0[kotlin.Unit],kotlin.Function0[kotlin.Unit],kotlin.Function1[kotlin.collections.List[ru.dgis.sdk.compose.routeeditor.UiIntermediateRoutePoint],kotlin.Unit],kotlin.Unit]#kotlin.Function5[androidx.compose.ui.Modifier,ru.dgis.sdk.compose.routeeditor.TransportMode,kotlin.Function1[ru.dgis.sdk.compose.routeeditor.TransportMode,kotlin.Unit],kotlin.collections.Map[ru.dgis.sdk.compose.routeeditor.TransportMode,ru.dgis.sdk.Duration?],java.util.EnumSet[ru.dgis.sdk.compose.routeeditor.TransportMode],kotlin.Unit]#kotlin.Function0[kotlin.Unit]/PointingToDeclaration//-747027718">
+  <div class="breadcrumbs"><a href="../index.html">2Gis Full SDK for Compose</a><span class="delimiter">/</span><a href="index.html">ru.dgis.sdk.compose.routeeditor</a><span class="delimiter">/</span><span class="current">RouteEditorComposable</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Route</span><wbr><span>Editor</span><wbr><span><span>Composable</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">fun </span><a href="-route-editor-composable.html"><span class="token function">RouteEditorComposable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="-route-editor-view-model/index.html">RouteEditorViewModel</a><span class="token punctuation">, </span></span><span class="parameter ">modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token operator"> = </span>Modifier<span class="token punctuation">, </span></span><span class="parameter ">colors<span class="token operator">: </span><a href="-route-editor-composable-colors/index.html">RouteEditorComposableColors</a><span class="token operator"> = </span>RouteEditorComposableColors.colors()<span class="token punctuation">, </span></span><span class="parameter ">textStyles<span class="token operator">: </span><a href="-route-editor-text-styles/index.html">RouteEditorTextStyles</a><span class="token operator"> = </span>RouteEditorTextStyles.default<span class="token punctuation">, </span></span><span class="parameter ">routeCard<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a>&nbsp;</span><span class="token punctuation">(</span>routeUiInfo<span class="token operator">: </span><a href="-route-ui-info/index.html">RouteUiInfo</a><span class="token punctuation">, </span>isExpanded<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span>onCardClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span>onActionButtonClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{ routeUiInfo, isExpanded, onCardClick, onActionButtonClick -&gt;
+        RouteCard(
+            routeUiInfo = routeUiInfo,
+            modifier = Modifier,
+            isExpanded = isExpanded,
+            onCardClick = onCardClick,
+            colors = colors.routeCardColors,
+            textStyles = textStyles,
+            onActionButtonClick = onActionButtonClick,
+        )
+    }<span class="token punctuation">, </span></span><span class="parameter ">routePointsDisplay<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a>&nbsp;</span><span class="token punctuation">(</span>startPointTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>destinationPointTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span>intermediatePoints<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-ui-intermediate-route-point/index.html">UiIntermediateRoutePoint</a><span class="token operator">&gt;</span><span class="token punctuation">, </span>onSwapDestinationsClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span>onCloseButtonClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span>onIntermediatePointsChanged<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-ui-intermediate-route-point/index.html">UiIntermediateRoutePoint</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{
+        startPointTitle,
+        destinationPointTitle,
+        intermediatePoints,
+        onSwapDestinationsClick,
+        onCloseButtonClick,
+        onIntermediatePointsChanged,
+        -&gt;
+        RoutePointsDisplay(
+            startPointTitle = startPointTitle,
+            destinationPointTitle = destinationPointTitle,
+            intermediatePoints = intermediatePoints,
+            onSwapDestinationsClick = onSwapDestinationsClick,
+            onCloseClick = onCloseButtonClick,
+            onIntermediatePointsChanged = onIntermediatePointsChanged,
+            colors = colors.routePointsDisplayColors,
+            textStyles = textStyles,
+        )
+    }<span class="token punctuation">, </span></span><span class="parameter ">transportationModesRow<span class="token operator">: </span><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a>&nbsp;</span><span class="token punctuation">(</span>modifier<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/compose/ui/Modifier.html">Modifier</a><span class="token punctuation">, </span>selectedMode<span class="token operator">: </span><a href="-transport-mode/index.html">TransportMode</a><span class="token punctuation">, </span>onModeSelected<span class="token operator">: </span><span class="token punctuation">(</span><a href="-transport-mode/index.html">TransportMode</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span>durations<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="-transport-mode/index.html">TransportMode</a><span class="token punctuation">, </span><span data-unresolved-link="ru.dgis.sdk/Duration///PointingToDeclaration/">Duration</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token punctuation">, </span>allowedTransportTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/EnumSet.html">EnumSet</a><span class="token operator">&lt;</span><a href="-transport-mode/index.html">TransportMode</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{ localModifier, selectedMode, onModeSelected, durations, allowedTransportTypes -&gt;
+        TransportationModesRow(
+            modifier = localModifier,
+            selectedMode = selectedMode,
+            onModeSelected = onModeSelected,
+            durations = durations,
+            allowedTransportTypes = allowedTransportTypes,
+            colors = colors.transportationModesColors,
+            textStyles = textStyles,
+        )
+    }<span class="token punctuation">, </span></span><span class="parameter ">onCloseClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><p class="paragraph">Navigation bottom sheet content that matches the Figma design This is the content that goes inside the ThreeStateBottomSheet</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>view</span><wbr><span><span>Model</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The route editor view model</p></div></div></div></div><div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>modifier</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Modifier for the composable</p></div></div></div></div><div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>colors</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Color scheme for the route editor components</p></div></div></div></div><div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>text</span><wbr><span><span>Styles</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Text styles for the route editor components</p></div></div></div></div><div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>route</span><wbr><span><span>Card</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Custom route card composable. If not provided, the default <a href="-route-card.html">RouteCard</a> will be used.     The lambda receives all parameters that <a href="-route-card.html">RouteCard</a> accepts.</p></div></div></div></div><div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>route</span><wbr><span>Points</span><wbr><span><span>Display</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Custom route points display composable. If not provided, the default <a href="-route-points-display.html">RoutePointsDisplay</a> will be used.     The lambda receives route point data and callbacks for interaction.</p></div></div></div></div><div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>transportation</span><wbr><span>Modes</span><wbr><span><span>Row</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Custom transportation modes row composable. If not provided, the default <a href="-transportation-modes-row.html">TransportationModesRow</a> will be used.     The lambda receives transport mode data, selection callback, and a modifier for positioning.</p></div></div></div></div><div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>on</span><wbr><span>Close</span><wbr><span><span>Click</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Callback invoked when the close button is clicked. Works with the default route points display.</p></div></div></div></div></div></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2026 2Gis</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
