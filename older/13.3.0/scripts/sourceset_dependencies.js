@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":compose-map/debug":[],":compose-map/full":[],":compose-map/fullDebug":[],":compose-map/fullRelease":[],":compose-map/main":[],":compose-map/map":[],":compose-map/mapDebug":[],":compose-map/mapRelease":[],":compose-map/release":[],":compose-navigation/debug":[],":compose-navigation/main":[],":compose-navigation/release":[]}'

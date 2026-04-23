@@ -1,0 +1,334 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DirectoryObjectContent</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dgis.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../index.html">
+                    mobile-sdk
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;ru.dgis.sdk.compose.search.defaultcontrols/-directory-object-content/index.html&quot;}"><div class="dropdown versions-dropdown" data-role="dropdown">
+  <div class="button button_dropdown versions-dropdown-button" role="combobox" data-role="dropdown-toggle" aria-controls="versions-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select version" tabindex="0">13.4.0</div>
+  <div class="dropdown--list dropdown--list_positioned_left versions-dropdown-data" role="listbox" data-role="dropdown-listbox" aria-label="Versions" id="versions-listbox">
+    <div class="dropdown--header" data-remove-style="true" style="display: none"><span>Select version</span><button class="button" data-role="dropdown-toggle" aria-label="Close versions selection"><i class="ui-kit-icon ui-kit-icon_cross"></i></button></div>
+    <div><a href="index.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.4.0</a></div>
+    <div><a href="../../../not-found-version.html?v=13.3.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.3.0</a></div>
+    <div><a href="../../../not-found-version.html?v=13.2.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.2.0</a></div>
+    <div><a href="../../../not-found-version.html?v=13.1.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.1.0</a></div>
+    <div><a href="../../../not-found-version.html?v=12.10.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.10.0</a></div>
+    <div><a href="../../../not-found-version.html?v=12.9.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.9.0</a></div>
+  </div>
+  <div class="dropdown--overlay"></div>
+</div>
+</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":compose-map/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":compose-map/release" data-filter=":compose-map/release">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    mobile-sdk
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="2Gis Map SDK for Compose::ru.dgis.sdk.compose.search.defaultcontrols/DirectoryObjectContent///PointingToDeclaration//598203098">
+  <div class="breadcrumbs"><a href="../../index.html">2Gis Map SDK for Compose</a><span class="delimiter">/</span><a href="../index.html">ru.dgis.sdk.compose.search.defaultcontrols</a><span class="delimiter">/</span><span class="current">DirectoryObjectContent</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Directory</span><wbr><span>Object</span><wbr><span><span>Content</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">DirectoryObjectContent</a></div><p class="paragraph">Interface defining all parts of <a href="../-directory-object-composable.html">DirectoryObjectComposable</a>.</p><p class="paragraph">Allows users to customize individual parts by providing custom implementations for specific ones (e.g., custom colors, icons, or completely replacing the part).</p><p class="paragraph">Use <a href="../-default-directory-object-content/index.html">DefaultDirectoryObjectContent</a> for default implementations, or create a custom implementation using Kotlin delegation to override only specific components:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">object MyDirectoryObjectContent : DirectoryObjectContent by DefaultDirectoryObjectContent {<br>    @Composable<br>    override fun Title(viewModel: DirectoryObjectViewModel) {<br>        // Custom colors<br>        DirectoryObjectTitleComposable(<br>            viewModel = viewModel,<br>            colors = myCustomColors<br>        )<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-default-directory-object-content/index.html">DefaultDirectoryObjectContent</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="25608785%2FFunctions%2F598203098" anchor-label="AdditionalInformation" id="25608785%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-additional-information.html"><span>Additional</span><wbr><span><span>Information</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="25608785%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-additional-information.html"><span class="token function">AdditionalInformation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders additional, non-essential information or metadata about the object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-667447128%2FFunctions%2F598203098" anchor-label="Alert" id="-667447128%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-alert.html"><span><span>Alert</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-667447128%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-alert.html"><span class="token function">Alert</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders any important alerts, warnings, or status messages (e.g., "Temporarily Closed").</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1796396310%2FFunctions%2F598203098" anchor-label="CloseButton" id="1796396310%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-close-button.html"><span>Close</span><wbr><span><span>Button</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1796396310%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-close-button.html"><span class="token function">CloseButton</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders a button to close or dismiss the detailed view.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2106098125%2FFunctions%2F598203098" anchor-label="Contacts" id="-2106098125%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-contacts.html"><span><span>Contacts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2106098125%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-contacts.html"><span class="token function">Contacts</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Displays contact information such as phone numbers.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-965365035%2FFunctions%2F598203098" anchor-label="Distance" id="-965365035%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-distance.html"><span><span>Distance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-965365035%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-distance.html"><span class="token function">Distance</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Shows the distance from the user's current location to the object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1094688335%2FFunctions%2F598203098" anchor-label="FullAddress" id="-1094688335%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-full-address.html"><span>Full</span><wbr><span><span>Address</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1094688335%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-full-address.html"><span class="token function">FullAddress</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Displays the full, detailed address of the object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1264034958%2FFunctions%2F598203098" anchor-label="Porches" id="-1264034958%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-porches.html"><span><span>Porches</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1264034958%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-porches.html"><span class="token function">Porches</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders information about entrances, porches, or specific access points (if applicable).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="230551293%2FFunctions%2F598203098" anchor-label="Rating" id="230551293%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-rating.html"><span><span>Rating</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="230551293%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-rating.html"><span class="token function">Rating</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Displays the object's rating and review count.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-181619912%2FFunctions%2F598203098" anchor-label="ShortAddress" id="-181619912%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-short-address.html"><span>Short</span><wbr><span><span>Address</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-181619912%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-short-address.html"><span class="token function">ShortAddress</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Displays a shortened or compact version of the object's address.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1344161816%2FFunctions%2F598203098" anchor-label="SitesAndSocialMedia" id="1344161816%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sites-and-social-media.html"><span>Sites</span><wbr><span>And</span><wbr><span>Social</span><wbr><span><span>Media</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1344161816%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-sites-and-social-media.html"><span class="token function">SitesAndSocialMedia</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders links to the object's official websites and social network profiles.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="281090168%2FFunctions%2F598203098" anchor-label="Subtitle" id="281090168%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-subtitle.html"><span><span>Subtitle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="281090168%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-subtitle.html"><span class="token function">Subtitle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders the subtitle or secondary description of the directory object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-908249180%2FFunctions%2F598203098" anchor-label="Title" id="-908249180%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-title.html"><span><span>Title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-908249180%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-title.html"><span class="token function">Title</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Renders the main title/name of the directory object in the detailed view.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="95761598%2FFunctions%2F598203098" anchor-label="WorkingHours" id="95761598%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-working-hours.html"><span>Working</span><wbr><span><span>Hours</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="95761598%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/compose/runtime/Composable.html"><span class="token annotation builtin">Composable</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="-working-hours.html"><span class="token function">WorkingHours</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">viewModel<span class="token operator">: </span><a href="../-directory-object-view-model/index.html">DirectoryObjectViewModel</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Displays the working hours information for a directory object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2026 2Gis</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ContactData</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dgis.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../index.html">
+                    mobile-sdk
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;ru.dgis.sdk.compose.search.defaultcontrols/-contact-data/index.html&quot;}"><div class="dropdown versions-dropdown" data-role="dropdown">
+  <div class="button button_dropdown versions-dropdown-button" role="combobox" data-role="dropdown-toggle" aria-controls="versions-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select version" tabindex="0">13.4.0</div>
+  <div class="dropdown--list dropdown--list_positioned_left versions-dropdown-data" role="listbox" data-role="dropdown-listbox" aria-label="Versions" id="versions-listbox">
+    <div class="dropdown--header" data-remove-style="true" style="display: none"><span>Select version</span><button class="button" data-role="dropdown-toggle" aria-label="Close versions selection"><i class="ui-kit-icon ui-kit-icon_cross"></i></button></div>
+    <div><a href="index.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.4.0</a></div>
+    <div><a href="../../../not-found-version.html?v=13.3.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.3.0</a></div>
+    <div><a href="../../../not-found-version.html?v=13.2.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.2.0</a></div>
+    <div><a href="../../../not-found-version.html?v=13.1.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.1.0</a></div>
+    <div><a href="../../../not-found-version.html?v=12.10.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.10.0</a></div>
+    <div><a href="../../../not-found-version.html?v=12.9.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.9.0</a></div>
+  </div>
+  <div class="dropdown--overlay"></div>
+</div>
+</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":compose-map/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":compose-map/release" data-filter=":compose-map/release">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    mobile-sdk
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="2Gis Map SDK for Compose::ru.dgis.sdk.compose.search.defaultcontrols/ContactData///PointingToDeclaration//598203098">
+  <div class="breadcrumbs"><a href="../../index.html">2Gis Map SDK for Compose</a><span class="delimiter">/</span><a href="../index.html">ru.dgis.sdk.compose.search.defaultcontrols</a><span class="delimiter">/</span><span class="current">ContactData</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Contact</span><wbr><span><span>Data</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="index.html">ContactData</a></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-email/index.html">Email</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-google-plus/index.html">GooglePlus</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-linked-in/index.html">LinkedIn</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-odnoklassniki/index.html">Odnoklassniki</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-phone/index.html">Phone</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-pinterest/index.html">Pinterest</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-telegram/index.html">Telegram</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-telegram-channel/index.html">TelegramChannel</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-twitter/index.html">Twitter</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-viber/index.html">Viber</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-v-kontakte/index.html">VKontakte</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-website/index.html">Website</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-whats-app/index.html">WhatsApp</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-you-tube/index.html">YouTube</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-unknown/index.html">Unknown</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-428450111%2FClasslikes%2F598203098" anchor-label="Companion" id="-428450111%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-428450111%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-467589583%2FClasslikes%2F598203098" anchor-label="Email" id="-467589583%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-email/index.html"><span><span>Email</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-467589583%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-email/index.html">Email</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1187352450%2FClasslikes%2F598203098" anchor-label="GooglePlus" id="1187352450%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-google-plus/index.html"><span>Google</span><wbr><span><span>Plus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1187352450%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-google-plus/index.html">GooglePlus</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1614197449%2FClasslikes%2F598203098" anchor-label="LinkedIn" id="-1614197449%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-linked-in/index.html"><span>Linked</span><wbr><span><span>In</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1614197449%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-linked-in/index.html">LinkedIn</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1202500758%2FClasslikes%2F598203098" anchor-label="Odnoklassniki" id="-1202500758%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-odnoklassniki/index.html"><span><span>Odnoklassniki</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1202500758%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-odnoklassniki/index.html">Odnoklassniki</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1510966431%2FClasslikes%2F598203098" anchor-label="Phone" id="1510966431%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-phone/index.html"><span><span>Phone</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1510966431%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-phone/index.html">Phone</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1092442637%2FClasslikes%2F598203098" anchor-label="Pinterest" id="-1092442637%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-pinterest/index.html"><span><span>Pinterest</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1092442637%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-pinterest/index.html">Pinterest</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="464979636%2FClasslikes%2F598203098" anchor-label="Telegram" id="464979636%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-telegram/index.html"><span><span>Telegram</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="464979636%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-telegram/index.html">Telegram</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-450839349%2FClasslikes%2F598203098" anchor-label="TelegramChannel" id="-450839349%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-telegram-channel/index.html"><span>Telegram</span><wbr><span><span>Channel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-450839349%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-telegram-channel/index.html">TelegramChannel</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1078476742%2FClasslikes%2F598203098" anchor-label="Twitter" id="-1078476742%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-twitter/index.html"><span><span>Twitter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1078476742%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-twitter/index.html">Twitter</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-513036733%2FClasslikes%2F598203098" anchor-label="Unknown" id="-513036733%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-unknown/index.html"><span><span>Unknown</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-513036733%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-unknown/index.html">Unknown</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1627238609%2FClasslikes%2F598203098" anchor-label="Viber" id="1627238609%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-viber/index.html"><span><span>Viber</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1627238609%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-viber/index.html">Viber</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2023750446%2FClasslikes%2F598203098" anchor-label="VKontakte" id="-2023750446%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-v-kontakte/index.html"><span><span>VKontakte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2023750446%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-v-kontakte/index.html">VKontakte</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1667414254%2FClasslikes%2F598203098" anchor-label="Website" id="-1667414254%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-website/index.html"><span><span>Website</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1667414254%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-website/index.html">Website</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1963675805%2FClasslikes%2F598203098" anchor-label="WhatsApp" id="-1963675805%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-whats-app/index.html"><span>Whats</span><wbr><span><span>App</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1963675805%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-whats-app/index.html">WhatsApp</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-866986646%2FClasslikes%2F598203098" anchor-label="YouTube" id="-866986646%2FClasslikes%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-you-tube/index.html"><span>You</span><wbr><span><span>Tube</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-866986646%2FClasslikes%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-you-tube/index.html">YouTube</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">contactInfo<span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/ContactInfo///PointingToDeclaration/">ContactInfo</span></span></span><span class="token punctuation">)</span> : <a href="index.html">ContactData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1915059397%2FProperties%2F598203098" anchor-label="comment" id="-1915059397%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="comment.html"><span><span>comment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1915059397%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="comment.html">comment</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="569418914%2FProperties%2F598203098" anchor-label="title" id="569418914%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title.html"><span><span>title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="569418914%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="title.html">title</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1444688809%2FProperties%2F598203098" anchor-label="value" id="1444688809%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value.html"><span><span>value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1444688809%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="value.html">value</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2000637788%2FProperties%2F598203098" anchor-label="valueForClipboard" id="2000637788%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-for-clipboard.html"><span>value</span><wbr><span>For</span><wbr><span><span>Clipboard</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2000637788%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="value-for-clipboard.html">valueForClipboard</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="35675971%2FFunctions%2F598203098" anchor-label="getIcon" id="35675971%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-icon.html"><span>get</span><wbr><span><span>Icon</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="35675971%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/DrawableRes.html"><span class="token annotation builtin">DrawableRes</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-icon.html"><span class="token function">getIcon</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">icons<span class="token operator">: </span><a href="../../ru.dgis.sdk.compose.search.controls.directoryobject/-directory-object-contacts-composable-icons/index.html">DirectoryObjectContactsComposableIcons</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-901248386%2FFunctions%2F598203098" anchor-label="isMessenger" id="-901248386%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-messenger.html"><span>is</span><wbr><span><span>Messenger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-901248386%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">ContactData</a><span class="token punctuation">.</span><a href="../is-messenger.html"><span class="token function">isMessenger</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1657218982%2FFunctions%2F598203098" anchor-label="isSocialMedia" id="-1657218982%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-social-media.html"><span>is</span><wbr><span>Social</span><wbr><span><span>Media</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1657218982%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">ContactData</a><span class="token punctuation">.</span><a href="../is-social-media.html"><span class="token function">isSocialMedia</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-803703265%2FFunctions%2F598203098" anchor-label="isWebMedia" id="-803703265%2FFunctions%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../is-web-media.html"><span>is</span><wbr><span>Web</span><wbr><span><span>Media</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-803703265%2FFunctions%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">ContactData</a><span class="token punctuation">.</span><a href="../is-web-media.html"><span class="token function">isWebMedia</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2026 2Gis</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

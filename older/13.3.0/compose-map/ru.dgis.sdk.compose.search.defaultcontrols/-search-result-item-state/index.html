@@ -1,0 +1,335 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SearchResultItemState</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dgis.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../index.html">
+                    mobile-sdk
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;ru.dgis.sdk.compose.search.defaultcontrols/-search-result-item-state/index.html&quot;}"><div class="dropdown versions-dropdown" data-role="dropdown">
+  <div class="button button_dropdown versions-dropdown-button" role="combobox" data-role="dropdown-toggle" aria-controls="versions-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select version" tabindex="0">13.3.0</div>
+  <div class="dropdown--list dropdown--list_positioned_left versions-dropdown-data" role="listbox" data-role="dropdown-listbox" aria-label="Versions" id="versions-listbox">
+    <div class="dropdown--header" data-remove-style="true" style="display: none"><span>Select version</span><button class="button" data-role="dropdown-toggle" aria-label="Close versions selection"><i class="ui-kit-icon ui-kit-icon_cross"></i></button></div>
+    <div><a href="../../../../../compose-map/ru.dgis.sdk.compose.search.defaultcontrols/-search-result-item-state/index.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.4.0</a></div>
+    <div><a href="index.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.3.0</a></div>
+    <div><a href="../../../../13.2.0/compose-map/ru.dgis.sdk.compose.search.defaultcontrols/-search-result-item-state/index.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.2.0</a></div>
+    <div><a href="../../../../../not-found-version.html?v=13.1.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.1.0</a></div>
+    <div><a href="../../../../../not-found-version.html?v=12.10.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.10.0</a></div>
+    <div><a href="../../../../../not-found-version.html?v=12.9.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.9.0</a></div>
+  </div>
+  <div class="dropdown--overlay"></div>
+</div>
+</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":compose-map/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":compose-map/release" data-filter=":compose-map/release">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    mobile-sdk
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="2Gis Map SDK for Compose::ru.dgis.sdk.compose.search.defaultcontrols/SearchResultItemState///PointingToDeclaration//598203098">
+  <div class="breadcrumbs"><a href="../../index.html">2Gis Map SDK for Compose</a><span class="delimiter">/</span><a href="../index.html">ru.dgis.sdk.compose.search.defaultcontrols</a><span class="delimiter">/</span><span class="current">SearchResultItemState</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Search</span><wbr><span>Result</span><wbr><span>Item</span><wbr><span><span>State</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">SearchResultItemState</a></div><p class="paragraph">Interface that describes a single item in the search results.</p><p class="paragraph">Contains all data required to display an object item.</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-default-search-result-item-state/index.html">DefaultSearchResultItemState</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-115937225%2FProperties%2F598203098" anchor-label="address" id="-115937225%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="address.html"><span><span>address</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-115937225%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="address.html">address</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Short address of the object. Null if address is unknown.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="856281231%2FProperties%2F598203098" anchor-label="alertDescription" id="856281231%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="alert-description.html"><span>alert</span><wbr><span><span>Description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="856281231%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="alert-description.html">alertDescription</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Important alert or status message (e.g., "Temporarily closed", "Limited services").</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="194190744%2FProperties%2F598203098" anchor-label="attributes" id="194190744%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="attributes.html"><span><span>attributes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="194190744%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="attributes.html">attributes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Key features or tags of the object, formatted for display (e.g., "Wi-Fi · Parking · 24/7").</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1296312910%2FProperties%2F598203098" anchor-label="chargingIsActive" id="1296312910%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="charging-is-active.html"><span>charging</span><wbr><span>Is</span><wbr><span><span>Active</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1296312910%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="charging-is-active.html">chargingIsActive</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Indicates if the charging station is currently active/operational. Relevant only for EV charging stations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2037626757%2FProperties%2F598203098" anchor-label="chargingIsBusy" id="-2037626757%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="charging-is-busy.html"><span>charging</span><wbr><span>Is</span><wbr><span><span>Busy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2037626757%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="charging-is-busy.html">chargingIsBusy</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Indicates if the charging station is currently busy (all connectors in use). Relevant only for EV charging stations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1269030774%2FProperties%2F598203098" anchor-label="chargingStationStatus" id="1269030774%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="charging-station-status.html"><span>charging</span><wbr><span>Station</span><wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1269030774%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="charging-station-status.html">chargingStationStatus</a><span class="token operator">: </span><a href="../-charging-station-status/index.html">ChargingStationStatus</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Detailed status of the charging station. Relevant only for EV charging stations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1343201567%2FProperties%2F598203098" anchor-label="directoryObject" id="1343201567%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="directory-object.html"><span>directory</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1343201567%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="directory-object.html">directoryObject</a><span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk.directory/DirectoryObject///PointingToDeclaration/">DirectoryObject</span></div><div class="brief "><p class="paragraph">The underlying directory object data.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-598772422%2FProperties%2F598203098" anchor-label="distance" id="-598772422%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="distance.html"><span><span>distance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-598772422%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="distance.html">distance</a><span class="token operator">: </span><span data-unresolved-link="ru.dgis.sdk/Meter///PointingToDeclaration/">Meter</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Distance to the object. Null if distance is unavailable.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="81996795%2FProperties%2F598203098" anchor-label="isOpen" id="81996795%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-open.html"><span>is</span><wbr><span><span>Open</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="81996795%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="is-open.html">isOpen</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Current open/closed status. True if open, false if closed, null if status is unknown.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="246106386%2FProperties%2F598203098" anchor-label="rating" id="246106386%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rating.html"><span><span>rating</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="246106386%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="rating.html">rating</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Average user rating from 0 to 5 (e.g., 4.2). Null if not rated.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1872222373%2FProperties%2F598203098" anchor-label="reviewsCount" id="-1872222373%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reviews-count.html"><span>reviews</span><wbr><span><span>Count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1872222373%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="reviews-count.html">reviewsCount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Total number of reviews submitted for this object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="771756663%2FProperties%2F598203098" anchor-label="subtitle" id="771756663%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="subtitle.html"><span><span>subtitle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="771756663%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="subtitle.html">subtitle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Subtitle or short description of the object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1907901907%2FProperties%2F598203098" anchor-label="title" id="1907901907%2FProperties%2F598203098" data-filterable-set=":compose-map/release"></a>
+          <div class="table-row" data-filterable-current=":compose-map/release" data-filterable-set=":compose-map/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title.html"><span><span>title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1907901907%2FProperties%2F598203098"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-map/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="title.html">title</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Main title of the object, typically the organization or place name.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2026 2Gis</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
