@@ -1,0 +1,1400 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Keys</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../styles/multimodule.css" rel="Stylesheet">
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dgis.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../index.html">
+                    mobile-sdk
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+<dokka-template-command data="{&quot;@class&quot;:&quot;org.jetbrains.dokka.base.templating.ReplaceVersionsCommand&quot;,&quot;location&quot;:&quot;ru.dgis.sdk.compose.navigation.settings/-keys/index.html&quot;}"><div class="dropdown versions-dropdown" data-role="dropdown">
+  <div class="button button_dropdown versions-dropdown-button" role="combobox" data-role="dropdown-toggle" aria-controls="versions-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select version" tabindex="0">13.5.0</div>
+  <div class="dropdown--list dropdown--list_positioned_left versions-dropdown-data" role="listbox" data-role="dropdown-listbox" aria-label="Versions" id="versions-listbox">
+    <div class="dropdown--header" data-remove-style="true" style="display: none"><span>Select version</span><button class="button" data-role="dropdown-toggle" aria-label="Close versions selection"><i class="ui-kit-icon ui-kit-icon_cross"></i></button></div>
+    <div><a href="index.html" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.5.0</a></div>
+    <div><a href="../../../not-found-version.html?v=13.4.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.4.0</a></div>
+    <div><a href="../../../not-found-version.html?v=13.3.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.3.0</a></div>
+    <div><a href="../../../not-found-version.html?v=13.2.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.2.0</a></div>
+    <div><a href="../../../not-found-version.html?v=13.1.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">13.1.0</a></div>
+    <div><a href="../../../not-found-version.html?v=12.10.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.10.0</a></div>
+    <div><a href="../../../not-found-version.html?v=12.9.0" class="dropdown--option dropdown--option-link" style="display: block; padding: 5px; color: #fff" data-remove-style="true" role="option">12.9.0</a></div>
+  </div>
+  <div class="dropdown--overlay"></div>
+</div>
+</dokka-template-command>        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":compose-navigation/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":compose-navigation/release" data-filter=":compose-navigation/release">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    mobile-sdk
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="2Gis Full SDK for Compose::ru.dgis.sdk.compose.navigation.settings/Keys///PointingToDeclaration//-747027718">
+  <div class="breadcrumbs"><a href="../../index.html">2Gis Full SDK for Compose</a><span class="delimiter">/</span><a href="../index.html">ru.dgis.sdk.compose.navigation.settings</a><span class="delimiter">/</span><span class="current">Keys</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Keys</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Keys</a></div><p class="paragraph">All navigation settings key constants.</p><p class="paragraph">Keys are grouped by naming convention:</p><ul><li><p class="paragraph"><code class="lang-kotlin">route.car.*</code>, <code class="lang-kotlin">route.pedestrian.*</code>, etc. — route search options per transport type</p></li><li><p class="paragraph"><code class="lang-kotlin">route.*</code> — general route behavior settings</p></li><li><p class="paragraph"><code class="lang-kotlin">sound.*</code> — sound notification settings and per-category toggles</p></li><li><p class="paragraph"><code class="lang-kotlin">map_events.*</code> — on-route display flag toggles</p></li><li><p class="paragraph"><code class="lang-kotlin">map_events.permanent.*</code> — permanent (passed-route) display flag toggles</p></li><li><p class="paragraph"><code class="lang-kotlin">voice.*</code> — voice package selection</p></li></ul></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1123595644%2FProperties%2F-747027718" anchor-label="ALTERNATIVE_ROUTES_ENABLED" id="1123595644%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-l-t-e-r-n-a-t-i-v-e_-r-o-u-t-e-s_-e-n-a-b-l-e-d.html"><span>ALTERNATIVE_</span><wbr><span>ROUTES_</span><wbr><span>ENABLED</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1123595644%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-a-l-t-e-r-n-a-t-i-v-e_-r-o-u-t-e-s_-e-n-a-b-l-e-d.html">ALTERNATIVE_ROUTES_ENABLED</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="134364190%2FProperties%2F-747027718" anchor-label="BETTER_ROUTE_ENABLED" id="134364190%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-e-t-t-e-r_-r-o-u-t-e_-e-n-a-b-l-e-d.html"><span>BETTER_</span><wbr><span>ROUTE_</span><wbr><span>ENABLED</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="134364190%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-b-e-t-t-e-r_-r-o-u-t-e_-e-n-a-b-l-e-d.html">BETTER_ROUTE_ENABLED</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="892489058%2FProperties%2F-747027718" anchor-label="BICYCLE_AVOID_CAR_ROADS" id="892489058%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-i-c-y-c-l-e_-a-v-o-i-d_-c-a-r_-r-o-a-d-s.html"><span>BICYCLE_</span><wbr><span>AVOID_</span><wbr><span>CAR_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="892489058%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-b-i-c-y-c-l-e_-a-v-o-i-d_-c-a-r_-r-o-a-d-s.html">BICYCLE_AVOID_CAR_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2061397027%2FProperties%2F-747027718" anchor-label="BICYCLE_AVOID_STAIRWAYS" id="-2061397027%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-i-c-y-c-l-e_-a-v-o-i-d_-s-t-a-i-r-w-a-y-s.html"><span>BICYCLE_</span><wbr><span>AVOID_</span><wbr><span>STAIRWAYS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2061397027%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-b-i-c-y-c-l-e_-a-v-o-i-d_-s-t-a-i-r-w-a-y-s.html">BICYCLE_AVOID_STAIRWAYS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1679622989%2FProperties%2F-747027718" anchor-label="BICYCLE_AVOID_UNDERPASSES" id="-1679622989%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-i-c-y-c-l-e_-a-v-o-i-d_-u-n-d-e-r-p-a-s-s-e-s.html"><span>BICYCLE_</span><wbr><span>AVOID_</span><wbr><span><span>UNDERPASSES</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1679622989%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-b-i-c-y-c-l-e_-a-v-o-i-d_-u-n-d-e-r-p-a-s-s-e-s.html">BICYCLE_AVOID_UNDERPASSES</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1099530549%2FProperties%2F-747027718" anchor-label="BICYCLE_AVOID_UNPAVED_ROADS" id="-1099530549%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-i-c-y-c-l-e_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html"><span>BICYCLE_</span><wbr><span>AVOID_</span><wbr><span>UNPAVED_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1099530549%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-b-i-c-y-c-l-e_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html">BICYCLE_AVOID_UNPAVED_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="50738669%2FProperties%2F-747027718" anchor-label="CALLOUT_VISUALIZATION_MODE" id="50738669%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-a-l-l-o-u-t_-v-i-s-u-a-l-i-z-a-t-i-o-n_-m-o-d-e.html"><span>CALLOUT_</span><wbr><span>VISUALIZATION_</span><wbr><span>MODE</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="50738669%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-c-a-l-l-o-u-t_-v-i-s-u-a-l-i-z-a-t-i-o-n_-m-o-d-e.html">CALLOUT_VISUALIZATION_MODE</a><span class="token operator">: </span><a href="../-settings-key/-enum-key/index.html">SettingsKey.EnumKey</a><span class="token operator">&lt;</span><span data-unresolved-link="ru.dgis.sdk.map/CalloutVisualizationMode///PointingToDeclaration/">CalloutVisualizationMode</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1200583299%2FProperties%2F-747027718" anchor-label="CAR_AVOID_FERRIES" id="-1200583299%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-a-r_-a-v-o-i-d_-f-e-r-r-i-e-s.html"><span>CAR_</span><wbr><span>AVOID_</span><wbr><span>FERRIES</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1200583299%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-c-a-r_-a-v-o-i-d_-f-e-r-r-i-e-s.html">CAR_AVOID_FERRIES</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="54679271%2FProperties%2F-747027718" anchor-label="CAR_AVOID_LOCKED_ROADS" id="54679271%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-a-r_-a-v-o-i-d_-l-o-c-k-e-d_-r-o-a-d-s.html"><span>CAR_</span><wbr><span>AVOID_</span><wbr><span>LOCKED_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="54679271%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-c-a-r_-a-v-o-i-d_-l-o-c-k-e-d_-r-o-a-d-s.html">CAR_AVOID_LOCKED_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-721338218%2FProperties%2F-747027718" anchor-label="CAR_AVOID_TOLL_ROADS" id="-721338218%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-a-r_-a-v-o-i-d_-t-o-l-l_-r-o-a-d-s.html"><span>CAR_</span><wbr><span>AVOID_</span><wbr><span>TOLL_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-721338218%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-c-a-r_-a-v-o-i-d_-t-o-l-l_-r-o-a-d-s.html">CAR_AVOID_TOLL_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="404223894%2FProperties%2F-747027718" anchor-label="CAR_AVOID_UNPAVED_ROADS" id="404223894%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-a-r_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html"><span>CAR_</span><wbr><span>AVOID_</span><wbr><span>UNPAVED_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="404223894%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-c-a-r_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html">CAR_AVOID_UNPAVED_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-597437712%2FProperties%2F-747027718" anchor-label="CAR_ROUTE_SEARCH_TYPE" id="-597437712%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-a-r_-r-o-u-t-e_-s-e-a-r-c-h_-t-y-p-e.html"><span>CAR_</span><wbr><span>ROUTE_</span><wbr><span>SEARCH_</span><wbr><span>TYPE</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-597437712%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-c-a-r_-r-o-u-t-e_-s-e-a-r-c-h_-t-y-p-e.html">CAR_ROUTE_SEARCH_TYPE</a><span class="token operator">: </span><a href="../-settings-key/-enum-key/index.html">SettingsKey.EnumKey</a><span class="token operator">&lt;</span><span data-unresolved-link="ru.dgis.sdk.routing/RouteSearchType///PointingToDeclaration/">RouteSearchType</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1439248793%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_ACCIDENTS" id="1439248793%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-a-c-c-i-d-e-n-t-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>ACCIDENTS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1439248793%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-a-c-c-i-d-e-n-t-s.html">MAP_EVENTS_ACCIDENTS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1083595306%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_BUBBLES" id="-1083595306%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-b-u-b-b-l-e-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>BUBBLES</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1083595306%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-b-u-b-b-l-e-s.html">MAP_EVENTS_BUBBLES</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-395888849%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_CAMERAS" id="-395888849%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-c-a-m-e-r-a-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>CAMERAS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-395888849%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-c-a-m-e-r-a-s.html">MAP_EVENTS_CAMERAS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="429466313%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_COMMENTS" id="429466313%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-c-o-m-m-e-n-t-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>COMMENTS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="429466313%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-c-o-m-m-e-n-t-s.html">MAP_EVENTS_COMMENTS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1456185028%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_ENABLED" id="-1456185028%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-e-n-a-b-l-e-d.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>ENABLED</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1456185028%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-e-n-a-b-l-e-d.html">MAP_EVENTS_ENABLED</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1674768174%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_LANES_BUBBLES" id="1674768174%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-l-a-n-e-s_-b-u-b-b-l-e-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>LANES_</span><wbr><span>BUBBLES</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1674768174%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-l-a-n-e-s_-b-u-b-b-l-e-s.html">MAP_EVENTS_LANES_BUBBLES</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1222755851%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_OTHER_EVENTS" id="-1222755851%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-o-t-h-e-r_-e-v-e-n-t-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>OTHER_</span><wbr><span>EVENTS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1222755851%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-o-t-h-e-r_-e-v-e-n-t-s.html">MAP_EVENTS_OTHER_EVENTS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1886922006%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_PERMANENT_ACCIDENTS" id="-1886922006%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-a-c-c-i-d-e-n-t-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>PERMANENT_</span><wbr><span>ACCIDENTS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1886922006%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-a-c-c-i-d-e-n-t-s.html">MAP_EVENTS_PERMANENT_ACCIDENTS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1236402368%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_PERMANENT_CAMERAS" id="1236402368%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-c-a-m-e-r-a-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>PERMANENT_</span><wbr><span>CAMERAS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1236402368%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-c-a-m-e-r-a-s.html">MAP_EVENTS_PERMANENT_CAMERAS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-509113512%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_PERMANENT_COMMENTS" id="-509113512%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-c-o-m-m-e-n-t-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>PERMANENT_</span><wbr><span>COMMENTS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-509113512%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-c-o-m-m-e-n-t-s.html">MAP_EVENTS_PERMANENT_COMMENTS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="176106189%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_PERMANENT_ENABLED" id="176106189%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-e-n-a-b-l-e-d.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>PERMANENT_</span><wbr><span>ENABLED</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="176106189%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-e-n-a-b-l-e-d.html">MAP_EVENTS_PERMANENT_ENABLED</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="665091336%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_PERMANENT_FINISH_POINT" id="665091336%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-f-i-n-i-s-h_-p-o-i-n-t.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>PERMANENT_</span><wbr><span>FINISH_</span><wbr><span>POINT</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="665091336%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-f-i-n-i-s-h_-p-o-i-n-t.html">MAP_EVENTS_PERMANENT_FINISH_POINT</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2022885755%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_PERMANENT_INTERMEDIATE_POINTS" id="-2022885755%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-i-n-t-e-r-m-e-d-i-a-t-e_-p-o-i-n-t-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>PERMANENT_</span><wbr><span>INTERMEDIATE_</span><wbr><span>POINTS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2022885755%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-i-n-t-e-r-m-e-d-i-a-t-e_-p-o-i-n-t-s.html">MAP_EVENTS_PERMANENT_INTERMEDIATE_POINTS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1986542844%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_PERMANENT_OTHER_EVENTS" id="-1986542844%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-o-t-h-e-r_-e-v-e-n-t-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>PERMANENT_</span><wbr><span>OTHER_</span><wbr><span>EVENTS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1986542844%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-o-t-h-e-r_-e-v-e-n-t-s.html">MAP_EVENTS_PERMANENT_OTHER_EVENTS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="529539944%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_PERMANENT_ROAD_RESTRICTIONS" id="529539944%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-r-o-a-d_-r-e-s-t-r-i-c-t-i-o-n-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>PERMANENT_</span><wbr><span>ROAD_</span><wbr><span><span>RESTRICTIONS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="529539944%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-r-o-a-d_-r-e-s-t-r-i-c-t-i-o-n-s.html">MAP_EVENTS_PERMANENT_ROAD_RESTRICTIONS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1320942313%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_PERMANENT_ROAD_WORKS" id="1320942313%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-r-o-a-d_-w-o-r-k-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>PERMANENT_</span><wbr><span>ROAD_</span><wbr><span>WORKS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1320942313%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-r-o-a-d_-w-o-r-k-s.html">MAP_EVENTS_PERMANENT_ROAD_WORKS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1456330363%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_PERMANENT_START_POINT" id="1456330363%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-s-t-a-r-t_-p-o-i-n-t.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>PERMANENT_</span><wbr><span>START_</span><wbr><span>POINT</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1456330363%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-s-t-a-r-t_-p-o-i-n-t.html">MAP_EVENTS_PERMANENT_START_POINT</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="867975357%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_PERMANENT_TOLL_ROADS" id="867975357%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-t-o-l-l_-r-o-a-d-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>PERMANENT_</span><wbr><span>TOLL_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="867975357%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-p-e-r-m-a-n-e-n-t_-t-o-l-l_-r-o-a-d-s.html">MAP_EVENTS_PERMANENT_TOLL_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1826839319%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_ROAD_RESTRICTIONS" id="1826839319%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-r-o-a-d_-r-e-s-t-r-i-c-t-i-o-n-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>ROAD_</span><wbr><span><span>RESTRICTIONS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1826839319%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-r-o-a-d_-r-e-s-t-r-i-c-t-i-o-n-s.html">MAP_EVENTS_ROAD_RESTRICTIONS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1353021978%2FProperties%2F-747027718" anchor-label="MAP_EVENTS_ROAD_WORKS" id="1353021978%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-p_-e-v-e-n-t-s_-r-o-a-d_-w-o-r-k-s.html"><span>MAP_</span><wbr><span>EVENTS_</span><wbr><span>ROAD_</span><wbr><span>WORKS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1353021978%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-a-p_-e-v-e-n-t-s_-r-o-a-d_-w-o-r-k-s.html">MAP_EVENTS_ROAD_WORKS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="630993178%2FProperties%2F-747027718" anchor-label="MOTORCYCLE_AVOID_FERRIES" id="630993178%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-t-o-r-c-y-c-l-e_-a-v-o-i-d_-f-e-r-r-i-e-s.html"><span>MOTORCYCLE_</span><wbr><span>AVOID_</span><wbr><span>FERRIES</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="630993178%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-o-t-o-r-c-y-c-l-e_-a-v-o-i-d_-f-e-r-r-i-e-s.html">MOTORCYCLE_AVOID_FERRIES</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1254976874%2FProperties%2F-747027718" anchor-label="MOTORCYCLE_AVOID_LOCKED_ROADS" id="1254976874%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-t-o-r-c-y-c-l-e_-a-v-o-i-d_-l-o-c-k-e-d_-r-o-a-d-s.html"><span>MOTORCYCLE_</span><wbr><span>AVOID_</span><wbr><span>LOCKED_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1254976874%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-o-t-o-r-c-y-c-l-e_-a-v-o-i-d_-l-o-c-k-e-d_-r-o-a-d-s.html">MOTORCYCLE_AVOID_LOCKED_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="508959705%2FProperties%2F-747027718" anchor-label="MOTORCYCLE_AVOID_TOLL_ROADS" id="508959705%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-t-o-r-c-y-c-l-e_-a-v-o-i-d_-t-o-l-l_-r-o-a-d-s.html"><span>MOTORCYCLE_</span><wbr><span>AVOID_</span><wbr><span>TOLL_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="508959705%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-o-t-o-r-c-y-c-l-e_-a-v-o-i-d_-t-o-l-l_-r-o-a-d-s.html">MOTORCYCLE_AVOID_TOLL_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1041256077%2FProperties%2F-747027718" anchor-label="MOTORCYCLE_AVOID_UNPAVED_ROADS" id="-1041256077%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-t-o-r-c-y-c-l-e_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html"><span>MOTORCYCLE_</span><wbr><span>AVOID_</span><wbr><span>UNPAVED_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1041256077%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-o-t-o-r-c-y-c-l-e_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html">MOTORCYCLE_AVOID_UNPAVED_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1112907763%2FProperties%2F-747027718" anchor-label="MOTORCYCLE_ROUTE_SEARCH_TYPE" id="-1112907763%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-t-o-r-c-y-c-l-e_-r-o-u-t-e_-s-e-a-r-c-h_-t-y-p-e.html"><span>MOTORCYCLE_</span><wbr><span>ROUTE_</span><wbr><span>SEARCH_</span><wbr><span>TYPE</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1112907763%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-m-o-t-o-r-c-y-c-l-e_-r-o-u-t-e_-s-e-a-r-c-h_-t-y-p-e.html">MOTORCYCLE_ROUTE_SEARCH_TYPE</a><span class="token operator">: </span><a href="../-settings-key/-enum-key/index.html">SettingsKey.EnumKey</a><span class="token operator">&lt;</span><span data-unresolved-link="ru.dgis.sdk.routing/RouteSearchType///PointingToDeclaration/">RouteSearchType</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="620368923%2FProperties%2F-747027718" anchor-label="PEDESTRIAN_AVOID_STAIRWAYS" id="620368923%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-e-d-e-s-t-r-i-a-n_-a-v-o-i-d_-s-t-a-i-r-w-a-y-s.html"><span>PEDESTRIAN_</span><wbr><span>AVOID_</span><wbr><span>STAIRWAYS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="620368923%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-p-e-d-e-s-t-r-i-a-n_-a-v-o-i-d_-s-t-a-i-r-w-a-y-s.html">PEDESTRIAN_AVOID_STAIRWAYS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1482922639%2FProperties%2F-747027718" anchor-label="PEDESTRIAN_AVOID_UNDERPASSES" id="-1482922639%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-e-d-e-s-t-r-i-a-n_-a-v-o-i-d_-u-n-d-e-r-p-a-s-s-e-s.html"><span>PEDESTRIAN_</span><wbr><span>AVOID_</span><wbr><span><span>UNDERPASSES</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1482922639%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-p-e-d-e-s-t-r-i-a-n_-a-v-o-i-d_-u-n-d-e-r-p-a-s-s-e-s.html">PEDESTRIAN_AVOID_UNDERPASSES</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1049055223%2FProperties%2F-747027718" anchor-label="PEDESTRIAN_AVOID_UNPAVED_ROADS" id="-1049055223%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-e-d-e-s-t-r-i-a-n_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html"><span>PEDESTRIAN_</span><wbr><span>AVOID_</span><wbr><span>UNPAVED_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1049055223%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-p-e-d-e-s-t-r-i-a-n_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html">PEDESTRIAN_AVOID_UNPAVED_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1540752719%2FProperties%2F-747027718" anchor-label="PEDESTRIAN_USE_INDOOR" id="-1540752719%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-e-d-e-s-t-r-i-a-n_-u-s-e_-i-n-d-o-o-r.html"><span>PEDESTRIAN_</span><wbr><span>USE_</span><wbr><span>INDOOR</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1540752719%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-p-e-d-e-s-t-r-i-a-n_-u-s-e_-i-n-d-o-o-r.html">PEDESTRIAN_USE_INDOOR</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1766072685%2FProperties%2F-747027718" anchor-label="PT_DEPARTURE_TIME" id="1766072685%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-t_-d-e-p-a-r-t-u-r-e_-t-i-m-e.html"><span>PT_</span><wbr><span>DEPARTURE_</span><wbr><span>TIME</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1766072685%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-p-t_-d-e-p-a-r-t-u-r-e_-t-i-m-e.html">PT_DEPARTURE_TIME</a><span class="token operator">: </span><a href="../-settings-key/-nullable-string-key/index.html">SettingsKey.NullableStringKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1603422094%2FProperties%2F-747027718" anchor-label="PT_TRANSPORT_TYPES" id="-1603422094%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-t_-t-r-a-n-s-p-o-r-t_-t-y-p-e-s.html"><span>PT_</span><wbr><span>TRANSPORT_</span><wbr><span>TYPES</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1603422094%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-p-t_-t-r-a-n-s-p-o-r-t_-t-y-p-e-s.html">PT_TRANSPORT_TYPES</a><span class="token operator">: </span><a href="../-settings-key/-enum-set-key/index.html">SettingsKey.EnumSetKey</a><span class="token operator">&lt;</span><span data-unresolved-link="ru.dgis.sdk.routing/PublicTransportType///PointingToDeclaration/">PublicTransportType</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1940087754%2FProperties%2F-747027718" anchor-label="PT_USE_SCHEDULE" id="-1940087754%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-t_-u-s-e_-s-c-h-e-d-u-l-e.html"><span>PT_</span><wbr><span>USE_</span><wbr><span>SCHEDULE</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1940087754%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-p-t_-u-s-e_-s-c-h-e-d-u-l-e.html">PT_USE_SCHEDULE</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1060715659%2FProperties%2F-747027718" anchor-label="REBUILD_ON_DEVIATION" id="-1060715659%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-b-u-i-l-d_-o-n_-d-e-v-i-a-t-i-o-n.html"><span>REBUILD_</span><wbr><span>ON_</span><wbr><span>DEVIATION</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1060715659%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-r-e-b-u-i-l-d_-o-n_-d-e-v-i-a-t-i-o-n.html">REBUILD_ON_DEVIATION</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-14033744%2FProperties%2F-747027718" anchor-label="SCOOTER_AVOID_CAR_ROADS" id="-14033744%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-c-o-o-t-e-r_-a-v-o-i-d_-c-a-r_-r-o-a-d-s.html"><span>SCOOTER_</span><wbr><span>AVOID_</span><wbr><span>CAR_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-14033744%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-c-o-o-t-e-r_-a-v-o-i-d_-c-a-r_-r-o-a-d-s.html">SCOOTER_AVOID_CAR_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1327047467%2FProperties%2F-747027718" anchor-label="SCOOTER_AVOID_STAIRWAYS" id="1327047467%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-c-o-o-t-e-r_-a-v-o-i-d_-s-t-a-i-r-w-a-y-s.html"><span>SCOOTER_</span><wbr><span>AVOID_</span><wbr><span>STAIRWAYS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1327047467%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-c-o-o-t-e-r_-a-v-o-i-d_-s-t-a-i-r-w-a-y-s.html">SCOOTER_AVOID_STAIRWAYS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-969674623%2FProperties%2F-747027718" anchor-label="SCOOTER_AVOID_UNDERPASSES" id="-969674623%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-c-o-o-t-e-r_-a-v-o-i-d_-u-n-d-e-r-p-a-s-s-e-s.html"><span>SCOOTER_</span><wbr><span>AVOID_</span><wbr><span><span>UNDERPASSES</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-969674623%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-c-o-o-t-e-r_-a-v-o-i-d_-u-n-d-e-r-p-a-s-s-e-s.html">SCOOTER_AVOID_UNDERPASSES</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1738950887%2FProperties%2F-747027718" anchor-label="SCOOTER_AVOID_UNPAVED_ROADS" id="-1738950887%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-c-o-o-t-e-r_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html"><span>SCOOTER_</span><wbr><span>AVOID_</span><wbr><span>UNPAVED_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1738950887%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-c-o-o-t-e-r_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html">SCOOTER_AVOID_UNPAVED_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1966801772%2FProperties%2F-747027718" anchor-label="SOUND_ACCIDENTS" id="1966801772%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-a-c-c-i-d-e-n-t-s.html"><span>SOUND_</span><wbr><span>ACCIDENTS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1966801772%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-a-c-c-i-d-e-n-t-s.html">SOUND_ACCIDENTS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2121410076%2FProperties%2F-747027718" anchor-label="SOUND_AVERAGE_SPEED_CAMERAS" id="2121410076%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-a-v-e-r-a-g-e_-s-p-e-e-d_-c-a-m-e-r-a-s.html"><span>SOUND_</span><wbr><span>AVERAGE_</span><wbr><span>SPEED_</span><wbr><span>CAMERAS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2121410076%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-a-v-e-r-a-g-e_-s-p-e-e-d_-c-a-m-e-r-a-s.html">SOUND_AVERAGE_SPEED_CAMERAS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1958188464%2FProperties%2F-747027718" anchor-label="SOUND_BETTER_ROUTE" id="1958188464%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-b-e-t-t-e-r_-r-o-u-t-e.html"><span>SOUND_</span><wbr><span>BETTER_</span><wbr><span>ROUTE</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1958188464%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-b-e-t-t-e-r_-r-o-u-t-e.html">SOUND_BETTER_ROUTE</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1782756575%2FProperties%2F-747027718" anchor-label="SOUND_CROSSROAD_CAMERAS" id="-1782756575%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-c-r-o-s-s-r-o-a-d_-c-a-m-e-r-a-s.html"><span>SOUND_</span><wbr><span>CROSSROAD_</span><wbr><span>CAMERAS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1782756575%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-c-r-o-s-s-r-o-a-d_-c-a-m-e-r-a-s.html">SOUND_CROSSROAD_CAMERAS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-937082411%2FProperties%2F-747027718" anchor-label="SOUND_EXCEED_SPEED_LIMITS" id="-937082411%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-e-x-c-e-e-d_-s-p-e-e-d_-l-i-m-i-t-s.html"><span>SOUND_</span><wbr><span>EXCEED_</span><wbr><span>SPEED_</span><wbr><span>LIMITS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-937082411%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-e-x-c-e-e-d_-s-p-e-e-d_-l-i-m-i-t-s.html">SOUND_EXCEED_SPEED_LIMITS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-338133235%2FProperties%2F-747027718" anchor-label="SOUND_HUMPS" id="-338133235%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-h-u-m-p-s.html"><span>SOUND_</span><wbr><span>HUMPS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-338133235%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-h-u-m-p-s.html">SOUND_HUMPS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2024934011%2FProperties%2F-747027718" anchor-label="SOUND_INSTRUCTIONS" id="-2024934011%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-i-n-s-t-r-u-c-t-i-o-n-s.html"><span>SOUND_</span><wbr><span><span>INSTRUCTIONS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2024934011%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-i-n-s-t-r-u-c-t-i-o-n-s.html">SOUND_INSTRUCTIONS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2123291513%2FProperties%2F-747027718" anchor-label="SOUND_INTERMEDIATE_POINTS" id="-2123291513%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-i-n-t-e-r-m-e-d-i-a-t-e_-p-o-i-n-t-s.html"><span>SOUND_</span><wbr><span>INTERMEDIATE_</span><wbr><span>POINTS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2123291513%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-i-n-t-e-r-m-e-d-i-a-t-e_-p-o-i-n-t-s.html">SOUND_INTERMEDIATE_POINTS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="705875311%2FProperties%2F-747027718" anchor-label="SOUND_LANE_CAMERAS" id="705875311%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-l-a-n-e_-c-a-m-e-r-a-s.html"><span>SOUND_</span><wbr><span>LANE_</span><wbr><span>CAMERAS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="705875311%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-l-a-n-e_-c-a-m-e-r-a-s.html">SOUND_LANE_CAMERAS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1884797664%2FProperties%2F-747027718" anchor-label="SOUND_LOST_LOCATION" id="-1884797664%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-l-o-s-t_-l-o-c-a-t-i-o-n.html"><span>SOUND_</span><wbr><span>LOST_</span><wbr><span>LOCATION</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1884797664%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-l-o-s-t_-l-o-c-a-t-i-o-n.html">SOUND_LOST_LOCATION</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-289229195%2FProperties%2F-747027718" anchor-label="SOUND_MAX_SPEED_CAMERAS" id="-289229195%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-m-a-x_-s-p-e-e-d_-c-a-m-e-r-a-s.html"><span>SOUND_</span><wbr><span>MAX_</span><wbr><span>SPEED_</span><wbr><span>CAMERAS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-289229195%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-m-a-x_-s-p-e-e-d_-c-a-m-e-r-a-s.html">SOUND_MAX_SPEED_CAMERAS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="125192263%2FProperties%2F-747027718" anchor-label="SOUND_MODE" id="125192263%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-m-o-d-e.html"><span>SOUND_</span><wbr><span>MODE</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="125192263%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-m-o-d-e.html">SOUND_MODE</a><span class="token operator">: </span><a href="../-settings-key/-enum-key/index.html">SettingsKey.EnumKey</a><span class="token operator">&lt;</span><a href="../-sound-mode/index.html">SoundMode</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1173456241%2FProperties%2F-747027718" anchor-label="SOUND_NO_STOPPING_CONTROL_CAMERAS" id="1173456241%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-n-o_-s-t-o-p-p-i-n-g_-c-o-n-t-r-o-l_-c-a-m-e-r-a-s.html"><span>SOUND_</span><wbr><span>NO_</span><wbr><span>STOPPING_</span><wbr><span>CONTROL_</span><wbr><span>CAMERAS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1173456241%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-n-o_-s-t-o-p-p-i-n-g_-c-o-n-t-r-o-l_-c-a-m-e-r-a-s.html">SOUND_NO_STOPPING_CONTROL_CAMERAS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="639419372%2FProperties%2F-747027718" anchor-label="SOUND_OBSTACLES" id="639419372%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-o-b-s-t-a-c-l-e-s.html"><span>SOUND_</span><wbr><span>OBSTACLES</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="639419372%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-o-b-s-t-a-c-l-e-s.html">SOUND_OBSTACLES</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1179742235%2FProperties%2F-747027718" anchor-label="SOUND_ROAD_MARKING_CAMERAS" id="-1179742235%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-r-o-a-d_-m-a-r-k-i-n-g_-c-a-m-e-r-a-s.html"><span>SOUND_</span><wbr><span>ROAD_</span><wbr><span>MARKING_</span><wbr><span>CAMERAS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1179742235%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-r-o-a-d_-m-a-r-k-i-n-g_-c-a-m-e-r-a-s.html">SOUND_ROAD_MARKING_CAMERAS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="132397080%2FProperties%2F-747027718" anchor-label="SOUND_ROAD_SUBTYPES" id="132397080%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-r-o-a-d_-s-u-b-t-y-p-e-s.html"><span>SOUND_</span><wbr><span>ROAD_</span><wbr><span>SUBTYPES</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="132397080%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-r-o-a-d_-s-u-b-t-y-p-e-s.html">SOUND_ROAD_SUBTYPES</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="527295143%2FProperties%2F-747027718" anchor-label="SOUND_ROAD_WORKS" id="527295143%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-r-o-a-d_-w-o-r-k-s.html"><span>SOUND_</span><wbr><span>ROAD_</span><wbr><span>WORKS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="527295143%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-r-o-a-d_-w-o-r-k-s.html">SOUND_ROAD_WORKS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="732384523%2FProperties%2F-747027718" anchor-label="SOUND_ROUTE_END" id="732384523%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-r-o-u-t-e_-e-n-d.html"><span>SOUND_</span><wbr><span>ROUTE_</span><wbr><span>END</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="732384523%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-r-o-u-t-e_-e-n-d.html">SOUND_ROUTE_END</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="265148747%2FProperties%2F-747027718" anchor-label="SOUND_ROUTE_REBUILD" id="265148747%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-r-o-u-t-e_-r-e-b-u-i-l-d.html"><span>SOUND_</span><wbr><span>ROUTE_</span><wbr><span>REBUILD</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="265148747%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-r-o-u-t-e_-r-e-b-u-i-l-d.html">SOUND_ROUTE_REBUILD</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1751399836%2FProperties%2F-747027718" anchor-label="SOUND_SPEED_EXCEED_ENABLED" id="1751399836%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-s-p-e-e-d_-e-x-c-e-e-d_-e-n-a-b-l-e-d.html"><span>SOUND_</span><wbr><span>SPEED_</span><wbr><span>EXCEED_</span><wbr><span>ENABLED</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1751399836%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-s-p-e-e-d_-e-x-c-e-e-d_-e-n-a-b-l-e-d.html">SOUND_SPEED_EXCEED_ENABLED</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1053862834%2FProperties%2F-747027718" anchor-label="SOUND_SPEED_EXCEED_THRESHOLD" id="1053862834%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-s-p-e-e-d_-e-x-c-e-e-d_-t-h-r-e-s-h-o-l-d.html"><span>SOUND_</span><wbr><span>SPEED_</span><wbr><span>EXCEED_</span><wbr><span>THRESHOLD</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1053862834%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-s-p-e-e-d_-e-x-c-e-e-d_-t-h-r-e-s-h-o-l-d.html">SOUND_SPEED_EXCEED_THRESHOLD</a><span class="token operator">: </span><a href="../-settings-key/-float-key/index.html">SettingsKey.FloatKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="637265176%2FProperties%2F-747027718" anchor-label="SOUND_TOLLS" id="637265176%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-t-o-l-l-s.html"><span>SOUND_</span><wbr><span>TOLLS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="637265176%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-t-o-l-l-s.html">SOUND_TOLLS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-351050896%2FProperties%2F-747027718" anchor-label="SOUND_VOLUME" id="-351050896%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-o-u-n-d_-v-o-l-u-m-e.html"><span>SOUND_</span><wbr><span>VOLUME</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-351050896%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-s-o-u-n-d_-v-o-l-u-m-e.html">SOUND_VOLUME</a><span class="token operator">: </span><a href="../-settings-key/-int-key/index.html">SettingsKey.IntKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-155662949%2FProperties%2F-747027718" anchor-label="TRUCK_ACTUAL_MASS" id="-155662949%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-r-u-c-k_-a-c-t-u-a-l_-m-a-s-s.html"><span>TRUCK_</span><wbr><span>ACTUAL_</span><wbr><span>MASS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-155662949%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-r-u-c-k_-a-c-t-u-a-l_-m-a-s-s.html">TRUCK_ACTUAL_MASS</a><span class="token operator">: </span><a href="../-settings-key/-nullable-int-key/index.html">SettingsKey.NullableIntKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-98033631%2FProperties%2F-747027718" anchor-label="TRUCK_AVOID_TOLL_ROADS" id="-98033631%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-r-u-c-k_-a-v-o-i-d_-t-o-l-l_-r-o-a-d-s.html"><span>TRUCK_</span><wbr><span>AVOID_</span><wbr><span>TOLL_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-98033631%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-r-u-c-k_-a-v-o-i-d_-t-o-l-l_-r-o-a-d-s.html">TRUCK_AVOID_TOLL_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2127554603%2FProperties%2F-747027718" anchor-label="TRUCK_AVOID_UNPAVED_ROADS" id="2127554603%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-r-u-c-k_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html"><span>TRUCK_</span><wbr><span>AVOID_</span><wbr><span>UNPAVED_</span><wbr><span>ROADS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2127554603%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-r-u-c-k_-a-v-o-i-d_-u-n-p-a-v-e-d_-r-o-a-d-s.html">TRUCK_AVOID_UNPAVED_ROADS</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="219683723%2FProperties%2F-747027718" anchor-label="TRUCK_AXLE_LOAD" id="219683723%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-r-u-c-k_-a-x-l-e_-l-o-a-d.html"><span>TRUCK_</span><wbr><span>AXLE_</span><wbr><span>LOAD</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="219683723%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-r-u-c-k_-a-x-l-e_-l-o-a-d.html">TRUCK_AXLE_LOAD</a><span class="token operator">: </span><a href="../-settings-key/-nullable-int-key/index.html">SettingsKey.NullableIntKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2049761255%2FProperties%2F-747027718" anchor-label="TRUCK_DANGEROUS_CARGO" id="-2049761255%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-r-u-c-k_-d-a-n-g-e-r-o-u-s_-c-a-r-g-o.html"><span>TRUCK_</span><wbr><span>DANGEROUS_</span><wbr><span>CARGO</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2049761255%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-r-u-c-k_-d-a-n-g-e-r-o-u-s_-c-a-r-g-o.html">TRUCK_DANGEROUS_CARGO</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1631962338%2FProperties%2F-747027718" anchor-label="TRUCK_EXPLOSIVE_CARGO" id="-1631962338%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-r-u-c-k_-e-x-p-l-o-s-i-v-e_-c-a-r-g-o.html"><span>TRUCK_</span><wbr><span>EXPLOSIVE_</span><wbr><span>CARGO</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1631962338%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-r-u-c-k_-e-x-p-l-o-s-i-v-e_-c-a-r-g-o.html">TRUCK_EXPLOSIVE_CARGO</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1586021199%2FProperties%2F-747027718" anchor-label="TRUCK_FALLBACK_ON_CAR" id="1586021199%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-r-u-c-k_-f-a-l-l-b-a-c-k_-o-n_-c-a-r.html"><span>TRUCK_</span><wbr><span>FALLBACK_</span><wbr><span>ON_</span><wbr><span>CAR</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1586021199%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-r-u-c-k_-f-a-l-l-b-a-c-k_-o-n_-c-a-r.html">TRUCK_FALLBACK_ON_CAR</a><span class="token operator">: </span><a href="../-settings-key/-boolean-key/index.html">SettingsKey.BooleanKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1448109395%2FProperties%2F-747027718" anchor-label="TRUCK_HEIGHT" id="1448109395%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-r-u-c-k_-h-e-i-g-h-t.html"><span>TRUCK_</span><wbr><span>HEIGHT</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1448109395%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-r-u-c-k_-h-e-i-g-h-t.html">TRUCK_HEIGHT</a><span class="token operator">: </span><a href="../-settings-key/-nullable-int-key/index.html">SettingsKey.NullableIntKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="304078964%2FProperties%2F-747027718" anchor-label="TRUCK_LENGTH" id="304078964%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-r-u-c-k_-l-e-n-g-t-h.html"><span>TRUCK_</span><wbr><span>LENGTH</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="304078964%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-r-u-c-k_-l-e-n-g-t-h.html">TRUCK_LENGTH</a><span class="token operator">: </span><a href="../-settings-key/-nullable-int-key/index.html">SettingsKey.NullableIntKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2006855844%2FProperties%2F-747027718" anchor-label="TRUCK_MAX_PERMITTED_MASS" id="2006855844%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-r-u-c-k_-m-a-x_-p-e-r-m-i-t-t-e-d_-m-a-s-s.html"><span>TRUCK_</span><wbr><span>MAX_</span><wbr><span>PERMITTED_</span><wbr><span>MASS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2006855844%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-r-u-c-k_-m-a-x_-p-e-r-m-i-t-t-e-d_-m-a-s-s.html">TRUCK_MAX_PERMITTED_MASS</a><span class="token operator">: </span><a href="../-settings-key/-nullable-int-key/index.html">SettingsKey.NullableIntKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1503815770%2FProperties%2F-747027718" anchor-label="TRUCK_WIDTH" id="1503815770%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-r-u-c-k_-w-i-d-t-h.html"><span>TRUCK_</span><wbr><span>WIDTH</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1503815770%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-r-u-c-k_-w-i-d-t-h.html">TRUCK_WIDTH</a><span class="token operator">: </span><a href="../-settings-key/-nullable-int-key/index.html">SettingsKey.NullableIntKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-68665550%2FProperties%2F-747027718" anchor-label="VOICE_SELECTED" id="-68665550%2FProperties%2F-747027718" data-filterable-set=":compose-navigation/release"></a>
+          <div class="table-row" data-filterable-current=":compose-navigation/release" data-filterable-set=":compose-navigation/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-v-o-i-c-e_-s-e-l-e-c-t-e-d.html"><span>VOICE_</span><wbr><span>SELECTED</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-68665550%2FProperties%2F-747027718"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":compose-navigation/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="-v-o-i-c-e_-s-e-l-e-c-t-e-d.html">VOICE_SELECTED</a><span class="token operator">: </span><a href="../-settings-key/-nullable-string-key/index.html">SettingsKey.NullableStringKey</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2026 2Gis</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
