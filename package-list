@@ -4,11 +4,11 @@ $dokka.linkExtension:html
 module:2Gis Map SDK for Compose
 ru.dgis.sdk.compose.map
 ru.dgis.sdk.compose.map.controls
-ru.dgis.sdk.compose.map.controls.modern.compass
-ru.dgis.sdk.compose.map.controls.modern.indoor
-ru.dgis.sdk.compose.map.controls.modern.mylocation
-ru.dgis.sdk.compose.map.controls.modern.traffic
-ru.dgis.sdk.compose.map.controls.modern.zoom
+ru.dgis.sdk.compose.map.controls.compass
+ru.dgis.sdk.compose.map.controls.indoor
+ru.dgis.sdk.compose.map.controls.mylocation
+ru.dgis.sdk.compose.map.controls.traffic
+ru.dgis.sdk.compose.map.controls.zoom
 ru.dgis.sdk.compose.map.internal
 ru.dgis.sdk.compose.map.minimap
 ru.dgis.sdk.compose.search.controls
@@ -37,3 +37,4 @@ ru.dgis.sdk.compose.navigation.controls.trafficandparking
 ru.dgis.sdk.compose.navigation.controls.trafficline
 ru.dgis.sdk.compose.navigation.settings
 ru.dgis.sdk.compose.routeeditor
+ru.dgis.sdk.compose.routeeditor.publictransport
